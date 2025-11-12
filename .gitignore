@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+
+# Virtual environment
+venv/
+.env/
+
+# Streamlit cache
+.streamlit/
+.cache/
+
+# VS Code settings
+.vscode/
+
+# OS Files
+Thumbs.db
+.DS_Store
+
+# Data & Logs
+*.csv
+*.log
+*.pkl
+*.h5
+*.pt
+*.xlsx
+*.zip
+
+# Build/latex/outputs
+*.aux
+*.out
+*.toc
+*.log
+*.pdf
+
+# Node modules (if used)
+node_modules/
