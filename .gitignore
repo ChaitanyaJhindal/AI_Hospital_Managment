@@ -24,7 +24,7 @@ Thumbs.db
 .DS_Store
 
 # Data & Logs
-*.csv
+# *.csv  # Commented out to allow hospital_patients_dataset.csv
 *.log
 *.pkl
 *.h5

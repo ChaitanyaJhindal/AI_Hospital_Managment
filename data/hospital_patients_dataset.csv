@@ -1,0 +1,501 @@
+patient_id,timestamp,age,gender,blood_group,heart_rate,blood_pressure_systolic,blood_pressure_diastolic,spo2,respiratory_rate,temperature,consciousness_level,glasgow_coma_scale,pain_level,hemoglobin,white_blood_cell_count,platelet_count,blood_sugar,creatinine,diagnosis,symptoms,pre_existing_conditions,previous_hospitalizations,time_since_symptoms_hours,arrival_mode,has_insurance,severity_category,severity_score,recommended_bed_type
+P0001,2025-10-31 18:53:13,63,Male,B-,167,186,118,70,29,35.3,Drowsy,7,8,9.9,17.6,142.0,53.0,3.4,Stroke,"Bleeding, High Fever, Severe Pain",Multiple Conditions,0,4.9,Ambulance,False,Critical,0.904,ICU
+P0002,2025-11-02 05:53:13,63,Male,O+,77,119,81,99,15,37.4,Alert,15,1,14.5,9.4,396.0,166.0,1.22,Heart Attack,"Dizziness, Seizures",Heart Disease,1,18.1,Walk-in,True,Low,0.268,General Ward
+P0003,2025-10-31 08:53:13,35,Male,O-,108,179,110,93,30,38.7,Confused,9,7,10.3,18.4,140.0,383.0,2.03,Kidney Failure,"Dizziness, Nausea, High Fever, Bleeding",Heart Disease,2,12.2,Walk-in,True,High,0.799,HDU
+P0004,2025-10-31 07:53:13,69,Female,A-,61,137,73,96,14,37.5,Alert,15,4,14.2,6.7,299.0,127.0,0.85,Fracture,Dizziness,Hypertension,2,37.0,Police,False,Low,0.045,General Ward
+P0005,2025-11-01 08:53:13,95,Female,B+,89,113,79,100,20,37.3,Alert,15,2,13.2,5.1,388.0,172.0,1.25,COPD,"Chest Pain, Difficulty Breathing",Heart Disease,2,42.2,Police,True,Low,0.096,General Ward
+P0006,2025-11-02 14:53:13,20,Male,B+,101,145,85,94,22,38.4,Confused,13,5,14.7,6.8,318.0,117.0,1.24,Stroke,Severe Pain,Heart Disease,0,3.5,Walk-in,True,Medium,0.547,HDU
+P0007,2025-10-31 08:53:13,60,Male,A-,61,137,80,95,20,36.8,Alert,15,4,12.5,4.9,384.0,137.0,0.98,Pulmonary Embolism,"Abdominal Pain, Weakness",Multiple Conditions,5,5.0,Walk-in,True,Low,0.172,General Ward
+P0008,2025-10-31 00:53:13,32,Male,A+,83,120,73,96,15,36.7,Alert,15,4,12.1,5.3,266.0,167.0,0.75,Kidney Failure,Chest Pain,Multiple Conditions,0,46.5,Ambulance,True,Low,0.067,General Ward
+P0009,2025-11-01 08:53:13,52,Male,B+,100,162,98,91,26,38.9,Drowsy,12,7,7.8,13.7,106.0,212.0,1.64,Kidney Failure,"Confusion, Abdominal Pain, High Fever, Chest Pain",Asthma,0,40.9,Ambulance,True,High,0.785,ICU
+P0010,2025-10-31 18:53:13,58,Male,A-,101,148,90,94,19,38.2,Confused,13,6,13.3,8.7,225.0,112.0,1.15,Kidney Failure,Nausea,None,1,4.0,Ambulance,True,Medium,0.433,General Ward
+P0011,2025-11-01 05:53:13,51,Male,O-,77,132,79,99,20,36.5,Alert,15,5,12.8,8.6,385.0,93.0,0.77,Gastrointestinal Bleeding,Bleeding,None,5,29.2,Police,True,Low,0.137,General Ward
+P0012,2025-10-31 10:53:13,93,Male,A-,147,197,44,75,39,40.9,Drowsy,3,8,10.8,17.5,115.0,41.0,2.57,Burns,"Abdominal Pain, Chest Pain, Seizures",Heart Disease,2,32.2,Ambulance,False,Critical,0.967,ICU
+P0013,2025-11-01 03:53:13,45,Male,O+,65,133,80,98,15,36.8,Alert,15,1,13.2,4.3,268.0,100.0,1.25,Pneumonia,"Abdominal Pain, Severe Pain",Diabetes,1,1.6,Walk-in,True,Low,0.159,General Ward
+P0014,2025-10-30 18:53:13,51,Female,AB-,63,138,78,96,16,36.5,Alert,15,5,13.5,9.1,228.0,141.0,1.01,Pneumonia,Bleeding,Heart Disease,0,34.2,Ambulance,True,Low,0.208,General Ward
+P0015,2025-11-01 17:53:13,7,Female,AB-,174,83,49,80,34,40.6,Drowsy,6,10,10.8,17.4,190.0,58.0,2.26,Burns,"Abdominal Pain, Unconscious, Cough, Seizures",Hypertension,0,21.5,Air Ambulance,True,Critical,0.927,ICU
+P0016,2025-11-02 01:53:13,86,Female,A-,110,154,87,94,19,38.3,Alert,13,4,12.6,7.3,362.0,87.0,0.95,Gastrointestinal Bleeding,"Nausea, Weakness",Diabetes,5,7.5,Walk-in,True,Medium,0.623,HDU
+P0017,2025-11-01 07:53:13,45,Female,A+,67,139,73,98,14,37.5,Alert,15,5,15.9,8.2,388.0,169.0,1.07,COPD,"Confusion, Nausea",Kidney Disease,3,35.8,Walk-in,False,Low,0.18,General Ward
+P0018,2025-11-02 11:53:13,85,Male,AB+,124,67,110,74,30,35.3,Drowsy,3,9,8.6,16.3,142.0,46.0,3.64,Sepsis,"Chest Pain, Seizures, Bleeding, Weakness",Multiple Conditions,2,23.7,Ambulance,False,Critical,0.915,ICU
+P0019,2025-11-02 09:53:13,61,Female,B+,149,188,129,72,38,41.2,Drowsy,3,9,8.5,13.7,133.0,276.0,2.13,Gastrointestinal Bleeding,Cough,Multiple Conditions,0,11.2,Air Ambulance,True,Critical,0.967,ICU
+P0020,2025-10-31 14:53:13,25,Male,B+,64,125,73,99,15,37.1,Alert,15,3,15.0,5.2,302.0,155.0,0.77,Diabetes Emergency,Bleeding,Multiple Conditions,1,28.0,Ambulance,True,Low,0.23,General Ward
+P0021,2025-10-31 07:53:13,46,Male,A-,84,119,73,99,12,37.0,Alert,15,4,14.5,4.5,312.0,81.0,0.95,Poisoning,Weakness,Heart Disease,3,30.7,Police,False,Low,0.283,General Ward
+P0022,2025-11-01 05:53:13,60,Female,O-,86,133,78,97,15,37.6,Alert,15,1,12.8,7.2,338.0,137.0,1.1,Kidney Failure,Nausea,Diabetes,1,9.1,Police,True,Low,0.142,General Ward
+P0023,2025-11-01 09:53:13,26,Female,A+,130,156,92,89,28,39.0,Alert,12,9,8.8,12.1,129.0,249.0,2.68,COPD,"Weakness, Cough, Confusion",Asthma,1,17.2,Police,True,High,0.711,HDU
+P0024,2025-11-01 06:53:13,68,Male,B-,123,165,98,93,30,39.1,Alert,10,8,7.9,13.4,101.0,56.0,2.88,Diabetes Emergency,"Difficulty Breathing, Chest Pain, Unconscious, Bleeding",Diabetes,2,23.2,Air Ambulance,True,High,0.843,ICU
+P0025,2025-11-01 12:53:13,16,Female,A-,120,171,91,89,24,39.3,Confused,9,7,7.5,18.1,161.0,245.0,2.63,Trauma,"Unconscious, Weakness, Bleeding",Heart Disease,2,29.5,Ambulance,False,High,0.84,ICU
+P0026,2025-10-31 23:53:13,67,Male,B-,117,152,95,88,28,39.0,Drowsy,12,8,7.1,14.3,128.0,66.0,3.81,Stroke,"Difficulty Breathing, Confusion, Severe Pain, High Fever",Diabetes,0,39.8,Police,True,High,0.683,ICU
+P0027,2025-10-31 06:53:13,43,Female,O+,76,127,85,98,13,37.3,Alert,15,4,14.8,8.2,156.0,103.0,1.1,Asthma Attack,Abdominal Pain,Multiple Conditions,1,27.9,Police,False,Low,0.188,General Ward
+P0028,2025-10-30 17:53:13,58,Female,A-,91,143,90,94,23,37.6,Alert,14,7,14.6,6.0,386.0,161.0,1.03,Sepsis,Seizures,Heart Disease,3,15.9,Police,True,Medium,0.564,HDU
+P0029,2025-11-01 19:53:13,41,Female,O-,94,154,81,93,20,38.0,Confused,14,7,12.0,10.8,302.0,104.0,0.8,Burns,Confusion,Asthma,0,4.9,Air Ambulance,False,Medium,0.637,General Ward
+P0030,2025-10-31 21:53:13,49,Female,O+,115,165,97,91,30,38.6,Alert,10,6,8.1,18.3,141.0,68.0,2.21,Gastrointestinal Bleeding,"High Fever, Nausea, Confusion, Cough",Diabetes,4,16.3,Police,True,High,0.741,HDU
+P0031,2025-11-01 05:53:13,40,Female,B-,124,163,91,90,29,39.2,Confused,12,7,9.0,12.3,150.0,374.0,1.75,Gastrointestinal Bleeding,Cough,Heart Disease,2,20.0,Walk-in,False,High,0.665,ICU
+P0032,2025-10-31 07:53:13,62,Male,AB-,121,177,107,91,27,39.1,Confused,9,6,7.9,17.5,129.0,47.0,3.4,Gastrointestinal Bleeding,"High Fever, Cough, Bleeding, Chest Pain",Hypertension,0,15.9,Ambulance,True,High,0.722,HDU
+P0033,2025-10-31 08:53:13,56,Male,B+,82,149,92,93,21,38.4,Alert,13,7,14.4,7.2,317.0,170.0,0.98,Stroke,Difficulty Breathing,Diabetes,4,45.4,Air Ambulance,True,Medium,0.56,General Ward
+P0034,2025-11-01 09:53:13,32,Female,O-,67,122,81,99,16,37.8,Alert,15,3,11.6,9.8,249.0,81.0,1.22,Heart Attack,Unconscious,Multiple Conditions,1,40.1,Air Ambulance,True,Low,0.31,General Ward
+P0035,2025-10-31 03:53:13,60,Female,B+,83,158,81,94,24,37.9,Confused,13,4,15.6,6.3,254.0,100.0,1.17,Burns,"High Fever, Bleeding",Diabetes,2,46.5,Air Ambulance,False,Medium,0.601,General Ward
+P0036,2025-11-01 10:53:13,22,Male,O+,105,147,91,92,24,37.9,Confused,13,7,13.2,9.2,216.0,118.0,1.08,Gastrointestinal Bleeding,Dizziness,Diabetes,2,22.9,Walk-in,False,Medium,0.629,General Ward
+P0037,2025-10-31 00:53:13,38,Female,O+,64,111,71,97,19,36.7,Alert,15,2,15.5,4.9,263.0,147.0,1.15,Heart Attack,"Unconscious, Cough",Asthma,2,42.6,Walk-in,True,Low,0.04,General Ward
+P0038,2025-11-01 20:53:13,26,Female,B-,148,87,51,71,34,35.5,Unresponsive,3,10,7.8,17.1,197.0,42.0,3.47,Sepsis,Abdominal Pain,Hypertension,0,39.1,Ambulance,False,Critical,0.899,ICU
+P0039,2025-11-02 11:53:13,44,Female,B+,121,177,90,89,22,38.9,Alert,11,6,7.7,12.4,174.0,349.0,2.62,Heart Attack,Nausea,Diabetes,0,45.4,Walk-in,False,High,0.742,HDU
+P0040,2025-10-31 04:53:13,33,Male,O-,129,164,92,88,27,39.1,Alert,10,8,9.5,16.7,171.0,319.0,2.63,Poisoning,"Difficulty Breathing, Cough, Abdominal Pain, Confusion",Asthma,0,20.9,Walk-in,True,High,0.718,HDU
+P0041,2025-10-31 01:53:13,68,Female,O+,121,158,101,89,29,38.6,Alert,9,9,7.4,17.9,181.0,317.0,3.18,Appendicitis,"Cough, Chest Pain, Bleeding, Unconscious",Heart Disease,4,17.2,Police,True,High,0.681,ICU
+P0042,2025-10-31 18:53:13,21,Female,A-,68,128,77,98,20,37.8,Alert,15,5,14.3,8.5,157.0,173.0,1.2,Fracture,High Fever,Diabetes,1,33.9,Police,True,Low,0.369,General Ward
+P0043,2025-11-01 11:53:13,83,Female,A-,123,170,90,88,30,38.7,Confused,12,8,7.6,14.5,132.0,68.0,1.89,Stroke,Bleeding,Hypertension,3,31.9,Air Ambulance,True,High,0.733,HDU
+P0044,2025-10-31 17:53:13,51,Male,AB+,101,148,95,94,18,37.7,Alert,13,5,12.9,5.5,184.0,106.0,0.9,Burns,"Cough, Weakness",None,4,6.6,Walk-in,True,Medium,0.525,HDU
+P0045,2025-10-31 12:53:13,30,Female,A+,109,132,90,95,22,37.9,Confused,14,4,13.3,10.8,193.0,175.0,0.98,Sepsis,"Difficulty Breathing, Weakness",Kidney Disease,2,12.1,Ambulance,False,Medium,0.531,General Ward
+P0046,2025-10-31 22:53:13,47,Male,A-,100,133,86,94,20,38.2,Alert,13,4,12.2,5.4,301.0,156.0,1.09,COPD,"Nausea, Unconscious",Hypertension,4,32.9,Air Ambulance,False,Medium,0.616,General Ward
+P0047,2025-10-31 19:53:13,42,Female,AB+,137,61,42,84,35,35.2,Unresponsive,3,10,10.5,18.8,162.0,55.0,2.62,Fracture,"Seizures, Unconscious",Multiple Conditions,3,46.0,Ambulance,False,Critical,0.866,ICU
+P0048,2025-10-31 23:53:13,34,Male,B-,94,144,85,94,20,38.4,Confused,14,6,14.6,4.4,308.0,113.0,0.9,Poisoning,"Bleeding, Abdominal Pain",Asthma,2,16.3,Walk-in,True,Medium,0.629,HDU
+P0049,2025-11-02 02:53:13,22,Male,AB+,72,130,80,96,20,36.6,Alert,15,4,13.8,4.1,227.0,175.0,0.91,COPD,"Severe Pain, Abdominal Pain",Multiple Conditions,1,7.9,Walk-in,True,Low,0.338,General Ward
+P0050,2025-11-01 08:53:13,63,Male,AB-,84,129,74,99,18,36.7,Alert,15,2,15.2,9.4,352.0,97.0,0.96,Pulmonary Embolism,Nausea,Heart Disease,3,36.2,Police,True,Low,0.094,General Ward
+P0051,2025-10-30 21:53:13,76,Female,O-,69,134,82,99,20,37.0,Alert,15,2,15.2,9.6,185.0,105.0,1.08,Fracture,Cough,Heart Disease,1,14.0,Ambulance,True,Low,0.109,General Ward
+P0052,2025-10-30 19:53:13,42,Male,O-,142,181,56,77,34,40.2,Drowsy,5,8,10.4,17.2,179.0,257.0,3.24,Pulmonary Embolism,"Nausea, Unconscious, Chest Pain, Difficulty Breathing",Hypertension,1,10.7,Air Ambulance,True,Critical,0.932,ICU
+P0053,2025-10-31 15:53:13,74,Male,AB+,101,157,103,93,29,38.6,Confused,9,7,9.9,14.3,100.0,51.0,3.16,Heart Attack,Confusion,Heart Disease,3,19.0,Ambulance,True,High,0.777,ICU
+P0054,2025-10-30 17:53:13,90,Male,AB-,103,151,83,94,19,37.5,Confused,13,7,15.9,7.3,196.0,93.0,1.13,Diabetes Emergency,"Severe Pain, Chest Pain",Hypertension,2,42.6,Walk-in,True,Medium,0.529,General Ward
+P0055,2025-11-01 15:53:13,41,Male,AB+,107,154,81,94,20,37.6,Confused,14,7,14.8,10.3,247.0,177.0,1.0,Appendicitis,"Abdominal Pain, Confusion",Heart Disease,5,38.6,Police,True,Medium,0.42,General Ward
+P0056,2025-11-01 20:53:13,68,Male,AB-,89,139,94,95,19,38.2,Confused,14,4,14.8,10.4,304.0,123.0,1.08,Burns,Dizziness,Hypertension,5,17.8,Air Ambulance,True,Medium,0.638,HDU
+P0057,2025-11-01 05:53:13,15,Male,AB-,92,160,81,93,23,37.9,Confused,14,7,14.9,8.0,282.0,120.0,1.09,Appendicitis,Chest Pain,Hypertension,1,24.2,Walk-in,True,Medium,0.465,HDU
+P0058,2025-11-01 08:53:13,15,Female,B-,84,157,82,95,19,38.4,Confused,13,6,14.5,9.0,287.0,109.0,0.88,Heart Attack,Abdominal Pain,Hypertension,0,24.7,Police,True,Medium,0.598,HDU
+P0059,2025-10-30 16:53:13,51,Female,O-,77,114,72,95,16,37.0,Alert,15,4,13.9,9.4,356.0,87.0,1.28,Fracture,Nausea,Kidney Disease,2,32.8,Air Ambulance,True,Low,0.051,General Ward
+P0060,2025-11-01 12:53:13,53,Male,A-,129,199,47,86,32,40.0,Unresponsive,4,10,8.2,16.3,150.0,45.0,1.93,COPD,"Unconscious, Chest Pain, Cough",Asthma,4,45.6,Ambulance,True,Critical,0.89,ICU
+P0061,2025-10-30 21:53:13,60,Female,AB+,90,119,85,96,18,36.9,Alert,15,1,14.6,5.1,254.0,126.0,0.9,Burns,"Cough, Seizures",Hypertension,1,46.8,Police,False,Low,0.304,General Ward
+P0062,2025-10-31 23:53:13,72,Female,A-,74,117,74,95,12,36.9,Alert,15,4,15.4,6.9,391.0,170.0,1.19,Asthma Attack,Abdominal Pain,Heart Disease,4,24.2,Walk-in,True,Low,0.187,General Ward
+P0063,2025-10-31 05:53:13,95,Female,O-,86,148,91,92,18,37.8,Confused,14,4,15.3,7.0,371.0,153.0,1.16,Diabetes Emergency,"Chest Pain, Unconscious",Hypertension,2,17.7,Walk-in,True,Medium,0.497,HDU
+P0064,2025-10-31 22:53:13,26,Male,B+,72,121,80,99,17,37.5,Alert,15,2,14.2,6.8,160.0,84.0,1.13,Heart Attack,"Confusion, Nausea",Multiple Conditions,2,29.3,Walk-in,False,Low,0.056,General Ward
+P0065,2025-10-31 14:53:13,88,Female,AB-,106,146,95,94,21,38.3,Confused,14,4,15.9,8.1,349.0,153.0,1.11,COPD,"Dizziness, Unconscious",Multiple Conditions,4,34.8,Walk-in,True,Medium,0.443,General Ward
+P0066,2025-11-01 00:53:13,47,Male,B-,114,160,103,89,28,39.2,Confused,12,6,9.8,16.1,156.0,296.0,2.28,Pneumonia,"Confusion, Seizures, Abdominal Pain, Cough",Hypertension,1,29.5,Police,False,High,0.706,ICU
+P0067,2025-10-30 19:53:13,74,Male,O-,115,161,107,93,26,38.8,Drowsy,12,9,10.3,19.6,180.0,49.0,2.37,Appendicitis,"Severe Pain, Abdominal Pain, Confusion, Bleeding",Heart Disease,4,7.0,Police,True,High,0.698,ICU
+P0068,2025-11-02 03:53:13,38,Male,O+,82,125,73,100,14,36.5,Alert,15,5,15.9,5.1,313.0,168.0,0.99,Appendicitis,Abdominal Pain,Kidney Disease,2,15.8,Police,False,Low,0.024,General Ward
+P0069,2025-10-31 03:53:13,63,Male,B+,88,136,75,95,18,37.5,Alert,15,2,15.7,10.7,382.0,168.0,0.71,Kidney Failure,"Bleeding, Nausea",Hypertension,1,42.7,Air Ambulance,True,Low,0.34,General Ward
+P0070,2025-11-01 07:53:13,68,Female,B+,74,130,78,100,14,36.5,Alert,15,3,15.1,8.0,339.0,98.0,1.21,Poisoning,"Difficulty Breathing, Weakness",Multiple Conditions,1,9.3,Ambulance,True,Low,0.191,General Ward
+P0071,2025-10-31 15:53:13,52,Female,AB+,109,168,108,88,26,39.2,Drowsy,10,6,9.7,15.7,116.0,385.0,3.23,Appendicitis,"Seizures, Unconscious, Severe Pain",Kidney Disease,3,46.0,Walk-in,True,High,0.741,ICU
+P0072,2025-10-31 04:53:13,40,Female,B-,107,171,109,88,30,38.9,Drowsy,11,6,10.7,12.9,183.0,67.0,1.91,Fracture,"Difficulty Breathing, Dizziness, Severe Pain, Unconscious",Multiple Conditions,2,4.8,Air Ambulance,True,High,0.812,HDU
+P0073,2025-10-31 14:53:13,53,Male,O-,125,159,90,91,26,39.3,Drowsy,10,6,7.2,14.8,106.0,70.0,3.97,Burns,Bleeding,Heart Disease,1,9.0,Air Ambulance,True,High,0.725,HDU
+P0074,2025-11-02 06:53:13,67,Male,AB-,105,167,102,92,24,39.2,Alert,9,6,10.9,15.7,172.0,53.0,2.12,Heart Attack,"Severe Pain, Cough, Difficulty Breathing",Diabetes,3,39.0,Ambulance,True,High,0.698,ICU
+P0075,2025-11-01 03:53:13,37,Male,B-,81,142,94,93,22,37.7,Alert,13,6,12.6,10.4,294.0,138.0,1.16,Poisoning,"Severe Pain, Bleeding",Multiple Conditions,2,47.3,Walk-in,True,Medium,0.503,HDU
+P0076,2025-11-01 14:53:13,35,Male,O+,151,71,56,83,34,35.2,Unresponsive,4,8,8.2,17.7,181.0,312.0,2.89,COPD,"Severe Pain, Bleeding, Abdominal Pain, Seizures",Hypertension,0,40.7,Air Ambulance,True,Critical,0.93,ICU
+P0077,2025-10-31 17:53:13,86,Male,A-,105,154,86,95,19,38.4,Confused,14,4,12.5,5.3,335.0,155.0,1.15,Diabetes Emergency,"Severe Pain, Confusion",Diabetes,3,37.3,Police,False,Medium,0.533,General Ward
+P0078,2025-10-31 19:53:13,51,Female,O-,105,153,95,94,19,37.9,Confused,13,5,14.8,4.1,288.0,138.0,1.13,Heart Attack,Severe Pain,Diabetes,4,11.4,Police,True,Medium,0.525,HDU
+P0079,2025-10-31 01:53:13,33,Female,O-,123,175,101,89,24,39.2,Confused,10,6,9.1,18.7,107.0,65.0,2.53,Stroke,"Difficulty Breathing, Cough",Multiple Conditions,2,0.9,Walk-in,True,High,0.725,HDU
+P0080,2025-11-01 10:53:13,16,Female,A+,96,153,88,94,18,38.0,Confused,13,4,15.6,7.7,210.0,142.0,0.85,Pneumonia,"Abdominal Pain, Weakness",Diabetes,1,18.2,Ambulance,True,Medium,0.541,General Ward
+P0081,2025-10-31 12:53:13,85,Male,A-,144,77,101,75,29,40.4,Unresponsive,7,8,10.6,19.4,123.0,338.0,2.18,Kidney Failure,High Fever,Heart Disease,4,46.2,Ambulance,False,Critical,0.872,ICU
+P0082,2025-10-31 17:53:13,45,Male,O+,88,127,80,98,14,37.5,Alert,15,1,13.8,10.8,163.0,124.0,1.2,Burns,"Abdominal Pain, Seizures",Diabetes,3,30.6,Ambulance,False,Low,0.196,General Ward
+P0083,2025-10-31 21:53:13,53,Female,A-,159,198,122,78,30,41.1,Drowsy,8,9,8.3,12.9,101.0,272.0,1.76,Fracture,"Weakness, Nausea",None,2,1.7,Ambulance,False,Critical,0.933,ICU
+P0084,2025-10-30 23:53:13,78,Female,A-,88,127,77,99,20,36.7,Alert,15,4,12.3,5.9,217.0,95.0,0.8,Poisoning,"Nausea, Difficulty Breathing",Multiple Conditions,1,12.5,Police,True,Low,0.288,General Ward
+P0085,2025-10-30 14:53:13,69,Female,A+,90,156,92,94,21,37.8,Alert,14,6,14.2,8.9,270.0,98.0,0.94,Kidney Failure,"Unconscious, Severe Pain",Heart Disease,3,18.4,Police,True,Medium,0.428,General Ward
+P0086,2025-11-01 17:53:13,57,Male,O-,133,85,42,85,30,40.0,Drowsy,8,9,10.2,12.6,199.0,280.0,2.86,Poisoning,"Cough, Confusion, Unconscious",Multiple Conditions,5,37.0,Ambulance,True,Critical,0.95,ICU
+P0087,2025-11-02 04:53:13,60,Female,AB-,73,113,70,95,16,36.8,Alert,15,5,14.0,8.8,205.0,117.0,0.98,Fracture,Seizures,Kidney Disease,2,23.4,Ambulance,True,Low,0.166,General Ward
+P0088,2025-10-30 15:53:13,74,Female,O-,66,126,85,97,19,36.6,Alert,15,4,12.9,6.1,353.0,92.0,1.21,Fracture,Cough,Hypertension,4,25.0,Walk-in,True,Low,0.064,General Ward
+P0089,2025-10-31 12:53:13,90,Female,B+,120,171,103,91,22,39.2,Alert,12,9,8.6,17.6,121.0,63.0,2.94,Stroke,"Seizures, Severe Pain, Nausea",Diabetes,3,13.0,Ambulance,True,High,0.769,HDU
+P0090,2025-10-31 22:53:13,92,Female,B+,101,152,89,92,23,37.6,Alert,13,6,12.0,6.6,185.0,119.0,1.06,Gastrointestinal Bleeding,"High Fever, Nausea",Multiple Conditions,3,26.9,Walk-in,True,Medium,0.435,General Ward
+P0091,2025-10-30 17:53:13,92,Female,A+,104,156,102,92,30,39.2,Confused,12,9,9.8,15.6,117.0,57.0,2.23,Sepsis,"High Fever, Nausea, Unconscious",Diabetes,0,26.6,Air Ambulance,False,High,0.704,ICU
+P0092,2025-10-30 18:53:13,66,Female,B-,83,153,87,94,24,38.5,Confused,14,6,15.4,4.6,366.0,92.0,1.19,Kidney Failure,"High Fever, Unconscious",Heart Disease,1,37.8,Walk-in,True,Medium,0.543,HDU
+P0093,2025-11-02 03:53:13,70,Female,AB+,98,138,83,93,24,38.3,Alert,14,5,14.7,4.9,187.0,112.0,0.85,Asthma Attack,"High Fever, Unconscious",Multiple Conditions,3,30.3,Police,False,Medium,0.419,General Ward
+P0094,2025-11-01 18:53:13,73,Female,O-,110,168,90,93,23,39.2,Confused,11,6,10.2,15.2,197.0,299.0,3.57,Sepsis,"Abdominal Pain, Seizures, Dizziness, Chest Pain",Diabetes,3,5.2,Ambulance,True,High,0.675,ICU
+P0095,2025-11-02 05:53:13,40,Female,B-,89,114,79,96,16,36.6,Alert,15,3,12.6,6.6,376.0,97.0,0.94,Poisoning,Weakness,Diabetes,0,33.9,Ambulance,True,Low,0.085,General Ward
+P0096,2025-11-01 17:53:13,5,Female,A+,102,140,83,95,23,37.6,Alert,13,7,11.9,9.6,176.0,117.0,0.88,Pneumonia,Dizziness,Heart Disease,2,3.7,Walk-in,True,Medium,0.553,HDU
+P0097,2025-10-30 21:53:13,29,Male,O+,101,144,86,92,18,37.6,Alert,14,6,15.8,6.2,185.0,108.0,0.75,Trauma,"Abdominal Pain, Cough",Asthma,2,40.8,Ambulance,True,Medium,0.451,General Ward
+P0098,2025-10-31 12:53:13,7,Male,B-,112,153,97,91,23,39.0,Alert,11,8,7.5,18.9,157.0,337.0,3.89,Sepsis,Chest Pain,Multiple Conditions,0,1.2,Ambulance,True,High,0.835,ICU
+P0099,2025-11-02 07:53:13,27,Female,O+,92,132,84,94,18,37.8,Alert,13,6,13.3,8.4,359.0,148.0,0.74,Poisoning,"Cough, Severe Pain",Kidney Disease,1,12.1,Ambulance,False,Medium,0.513,HDU
+P0100,2025-10-30 21:53:13,39,Male,A-,102,134,80,93,21,38.5,Confused,13,6,12.1,9.5,217.0,169.0,1.16,Pneumonia,"Abdominal Pain, Weakness",None,1,25.4,Police,True,Medium,0.524,HDU
+P0101,2025-10-31 22:53:13,19,Male,AB-,88,154,83,92,19,38.2,Alert,13,4,12.6,7.3,246.0,95.0,1.26,Stroke,Confusion,Multiple Conditions,0,11.2,Air Ambulance,True,Medium,0.629,General Ward
+P0102,2025-10-31 18:53:13,58,Male,A+,107,175,106,88,28,38.6,Confused,11,8,8.3,16.4,101.0,313.0,3.35,Stroke,"Seizures, Unconscious, Nausea, Severe Pain",Hypertension,3,7.7,Walk-in,False,High,0.697,ICU
+P0103,2025-10-30 14:53:13,40,Female,AB+,86,146,87,95,21,38.5,Alert,14,4,11.7,5.6,361.0,121.0,1.24,Heart Attack,Unconscious,Heart Disease,2,24.5,Ambulance,False,Medium,0.419,General Ward
+P0104,2025-11-01 12:53:13,31,Male,B-,88,157,90,95,23,38.3,Confused,14,7,12.7,4.5,201.0,158.0,1.05,Asthma Attack,High Fever,Hypertension,1,22.6,Air Ambulance,True,Medium,0.534,HDU
+P0105,2025-11-02 04:53:13,15,Male,A-,171,199,106,72,39,35.2,Drowsy,8,9,8.0,19.9,103.0,52.0,1.74,Stroke,"Difficulty Breathing, Chest Pain",None,1,6.7,Ambulance,False,Critical,0.906,ICU
+P0106,2025-10-30 23:53:13,67,Male,O-,84,132,90,92,18,38.4,Alert,13,7,15.2,6.8,157.0,148.0,0.8,Fracture,"Bleeding, Nausea",Diabetes,4,2.1,Walk-in,True,Medium,0.562,HDU
+P0107,2025-11-01 10:53:13,35,Male,AB+,64,123,76,100,20,36.8,Alert,15,5,15.1,10.9,345.0,116.0,1.03,Kidney Failure,"Unconscious, Confusion",Heart Disease,0,18.9,Police,True,Low,0.01,General Ward
+P0108,2025-11-01 16:53:13,90,Female,AB-,118,157,95,88,25,39.2,Confused,9,7,9.3,19.9,139.0,68.0,1.94,Fracture,"Unconscious, Chest Pain, Seizures",Heart Disease,1,27.2,Walk-in,True,High,0.758,HDU
+P0109,2025-10-31 00:53:13,66,Male,B-,116,165,90,90,25,39.3,Confused,10,8,7.2,13.2,170.0,222.0,3.9,Pneumonia,Seizures,Multiple Conditions,1,15.8,Police,True,High,0.808,HDU
+P0110,2025-11-02 01:53:13,62,Female,B-,98,156,85,95,20,38.2,Confused,13,5,14.8,10.6,387.0,119.0,1.3,Burns,Unconscious,Hypertension,4,44.2,Police,True,Medium,0.56,HDU
+P0111,2025-11-02 05:53:13,50,Male,B-,110,155,110,88,27,38.9,Confused,10,7,9.8,14.8,179.0,210.0,3.33,Appendicitis,"Nausea, Weakness, Seizures, Confusion",Hypertension,3,5.3,Air Ambulance,True,High,0.683,ICU
+P0112,2025-11-01 14:53:13,27,Female,A-,70,115,82,96,13,37.2,Alert,15,1,13.0,10.9,373.0,150.0,0.96,Heart Attack,Unconscious,Kidney Disease,0,8.0,Air Ambulance,True,Low,0.132,General Ward
+P0113,2025-11-01 05:53:13,88,Female,AB+,107,153,91,91,30,39.3,Alert,9,8,7.0,12.7,182.0,59.0,1.56,Asthma Attack,Nausea,Heart Disease,3,15.1,Ambulance,True,High,0.748,HDU
+P0114,2025-10-31 13:53:13,38,Male,AB-,92,141,85,95,18,37.8,Confused,14,5,15.3,7.9,188.0,150.0,0.76,Pulmonary Embolism,"Abdominal Pain, Confusion",Kidney Disease,2,46.6,Air Ambulance,True,Medium,0.538,HDU
+P0115,2025-11-01 05:53:13,31,Female,B-,89,132,92,92,22,38.1,Alert,13,7,12.3,10.9,393.0,161.0,0.78,Sepsis,Dizziness,Heart Disease,2,10.1,Air Ambulance,True,Medium,0.609,HDU
+P0116,2025-10-31 00:53:13,42,Female,AB-,88,146,94,92,24,38.2,Confused,13,7,12.2,8.0,296.0,176.0,0.76,Gastrointestinal Bleeding,Abdominal Pain,None,2,41.7,Police,True,Medium,0.466,General Ward
+P0117,2025-10-31 06:53:13,45,Female,B+,99,151,92,92,21,38.4,Confused,13,4,14.9,10.4,374.0,82.0,1.19,Trauma,"Bleeding, Nausea",Diabetes,1,46.7,Ambulance,True,Medium,0.475,HDU
+P0118,2025-10-31 03:53:13,78,Male,B-,106,179,103,93,29,39.3,Confused,9,7,7.3,17.7,140.0,63.0,1.93,Sepsis,Severe Pain,Diabetes,2,22.2,Ambulance,True,High,0.705,ICU
+P0119,2025-11-01 04:53:13,30,Male,A+,91,145,94,93,24,38.0,Confused,14,5,15.3,5.8,358.0,89.0,0.72,Diabetes Emergency,Unconscious,None,2,41.2,Walk-in,True,Medium,0.569,HDU
+P0120,2025-11-01 03:53:13,40,Male,O-,128,191,48,90,32,40.3,Unresponsive,6,9,7.9,14.4,152.0,59.0,2.78,Pulmonary Embolism,"Confusion, Dizziness, Unconscious",Kidney Disease,1,33.0,Air Ambulance,True,Critical,0.86,ICU
+P0121,2025-10-31 02:53:13,48,Female,B-,96,154,87,92,24,38.4,Confused,14,5,14.7,8.6,399.0,106.0,0.95,Stroke,Unconscious,Heart Disease,5,16.8,Walk-in,True,Medium,0.572,HDU
+P0122,2025-11-01 13:53:13,49,Male,B+,126,64,123,80,38,35.2,Unresponsive,6,9,8.5,16.7,146.0,44.0,2.68,Asthma Attack,Dizziness,Hypertension,1,20.1,Air Ambulance,True,Critical,0.871,ICU
+P0123,2025-10-30 19:53:13,93,Female,B+,175,191,115,80,38,35.2,Drowsy,4,10,10.1,15.9,176.0,323.0,2.51,Appendicitis,Chest Pain,Multiple Conditions,2,45.6,Air Ambulance,True,Critical,0.964,ICU
+P0124,2025-11-01 14:53:13,18,Male,B-,88,121,79,96,13,37.0,Alert,15,5,12.9,4.5,161.0,175.0,0.97,Poisoning,"Weakness, Dizziness",Asthma,1,16.8,Walk-in,True,Low,0.144,General Ward
+P0125,2025-10-31 02:53:13,30,Male,B+,123,150,108,92,24,38.6,Drowsy,9,9,10.5,14.0,153.0,41.0,3.13,Diabetes Emergency,Cough,None,1,20.3,Ambulance,True,High,0.759,ICU
+P0126,2025-11-02 14:53:13,62,Male,AB+,121,153,106,90,24,38.9,Alert,9,8,7.5,12.9,120.0,46.0,2.39,Kidney Failure,"Chest Pain, Confusion",Heart Disease,5,43.7,Air Ambulance,True,High,0.716,HDU
+P0127,2025-11-02 09:53:13,94,Male,O-,90,112,72,100,13,37.7,Alert,15,2,13.6,10.8,216.0,85.0,1.19,Stroke,"Seizures, Dizziness",Hypertension,0,20.7,Police,True,Low,0.038,General Ward
+P0128,2025-10-31 01:53:13,85,Male,AB-,108,144,88,92,20,38.3,Alert,13,7,13.3,7.2,359.0,149.0,0.99,Appendicitis,High Fever,Diabetes,1,47.1,Ambulance,False,Medium,0.504,HDU
+P0129,2025-10-30 15:53:13,77,Female,A+,121,178,94,91,29,38.6,Confused,12,6,7.3,17.2,101.0,66.0,3.94,Gastrointestinal Bleeding,Weakness,Heart Disease,5,23.4,Walk-in,True,High,0.68,HDU
+P0130,2025-10-31 10:53:13,18,Male,O-,115,177,95,88,29,38.8,Confused,11,6,9.0,16.4,138.0,216.0,3.5,Gastrointestinal Bleeding,Nausea,Heart Disease,1,15.5,Air Ambulance,False,High,0.671,ICU
+P0131,2025-10-31 15:53:13,65,Male,AB+,96,147,86,95,20,37.9,Alert,13,7,13.0,9.4,300.0,152.0,0.92,Pulmonary Embolism,Abdominal Pain,Hypertension,2,0.6,Walk-in,True,Medium,0.537,General Ward
+P0132,2025-10-31 07:53:13,80,Male,O+,88,149,86,93,18,38.4,Confused,13,7,15.2,5.3,234.0,156.0,0.73,Heart Attack,"Nausea, Dizziness",Hypertension,0,46.3,Walk-in,False,Medium,0.538,HDU
+P0133,2025-10-30 16:53:13,94,Male,B+,106,134,83,95,23,38.1,Confused,14,7,15.9,10.4,341.0,107.0,1.28,Poisoning,High Fever,Multiple Conditions,5,29.1,Air Ambulance,False,Medium,0.611,General Ward
+P0134,2025-10-31 08:53:13,94,Male,B-,79,132,79,100,17,37.7,Alert,15,2,15.9,8.6,390.0,130.0,1.12,Diabetes Emergency,"Confusion, Nausea",Hypertension,4,32.5,Air Ambulance,False,Low,0.114,General Ward
+P0135,2025-11-02 08:53:13,43,Female,B+,121,151,96,90,24,39.5,Drowsy,11,7,10.4,17.5,130.0,206.0,1.76,Pneumonia,"Cough, Dizziness",Multiple Conditions,5,11.8,Air Ambulance,True,High,0.789,HDU
+P0136,2025-11-01 06:53:13,95,Female,A+,103,138,86,95,24,37.7,Confused,13,5,12.8,5.2,321.0,99.0,0.8,Pneumonia,"Chest Pain, Weakness",Hypertension,1,26.9,Police,True,Medium,0.546,HDU
+P0137,2025-10-31 20:53:13,87,Male,A+,89,120,71,100,16,37.1,Alert,15,5,14.0,4.5,327.0,133.0,1.27,Stroke,Weakness,Hypertension,1,4.9,Air Ambulance,True,Low,0.353,General Ward
+P0138,2025-11-01 11:53:13,71,Female,A+,162,202,128,71,38,40.3,Drowsy,6,9,9.2,14.3,191.0,275.0,2.72,Heart Attack,"Confusion, Difficulty Breathing, Cough",Diabetes,1,30.3,Ambulance,True,Critical,0.951,ICU
+P0139,2025-10-30 18:53:13,46,Female,A-,101,134,80,95,23,37.8,Alert,13,4,12.3,5.8,168.0,162.0,1.25,Poisoning,"Nausea, Dizziness",Heart Disease,0,21.1,Air Ambulance,True,Medium,0.568,General Ward
+P0140,2025-11-02 14:53:13,63,Male,A+,127,152,101,92,23,38.8,Drowsy,11,6,8.1,19.4,138.0,65.0,2.83,Poisoning,"Dizziness, High Fever, Bleeding",Multiple Conditions,0,46.0,Police,False,High,0.675,ICU
+P0141,2025-10-31 17:53:13,95,Male,AB+,123,173,101,89,28,39.4,Drowsy,10,7,7.7,16.9,125.0,43.0,3.63,Diabetes Emergency,Bleeding,Multiple Conditions,1,12.4,Ambulance,True,High,0.84,HDU
+P0142,2025-10-31 07:53:13,60,Male,AB+,62,138,76,97,19,37.1,Alert,15,5,14.5,8.9,188.0,137.0,1.18,Trauma,Chest Pain,Heart Disease,1,12.2,Police,True,Low,0.285,General Ward
+P0143,2025-10-30 17:53:13,44,Female,O-,114,161,99,91,30,38.6,Drowsy,9,8,10.4,13.1,154.0,48.0,3.32,Sepsis,Unconscious,None,1,37.0,Air Ambulance,True,High,0.76,ICU
+P0144,2025-10-30 14:53:13,33,Male,AB-,67,138,79,96,19,37.2,Alert,15,1,13.3,7.5,316.0,165.0,1.18,Kidney Failure,Abdominal Pain,Asthma,0,21.7,Walk-in,False,Low,0.227,General Ward
+P0145,2025-10-30 14:53:13,51,Male,O-,62,118,81,96,12,37.4,Alert,15,5,15.6,6.5,267.0,125.0,0.73,Diabetes Emergency,"Difficulty Breathing, Cough",Kidney Disease,2,40.2,Police,True,Low,0.231,General Ward
+P0146,2025-11-01 23:53:13,77,Female,A-,68,122,77,99,18,37.0,Alert,15,3,13.7,7.4,301.0,130.0,0.78,COPD,Confusion,Diabetes,1,10.5,Police,False,Low,0.063,General Ward
+P0147,2025-10-30 14:53:13,75,Male,O-,75,125,76,99,14,37.3,Alert,15,4,11.6,4.3,293.0,96.0,1.08,Burns,High Fever,Diabetes,4,44.3,Police,True,Low,0.383,General Ward
+P0148,2025-11-02 02:53:13,95,Male,B-,99,145,95,93,19,38.3,Alert,13,6,12.3,8.8,381.0,140.0,0.74,Sepsis,Difficulty Breathing,Multiple Conditions,4,10.1,Ambulance,True,Medium,0.607,General Ward
+P0149,2025-11-02 14:53:13,84,Male,A-,150,188,60,86,34,39.6,Unresponsive,4,9,10.2,15.0,159.0,62.0,2.56,Heart Attack,"Difficulty Breathing, Bleeding",Multiple Conditions,5,9.5,Air Ambulance,False,Critical,0.962,ICU
+P0150,2025-10-31 12:53:13,65,Female,B-,105,140,93,94,18,37.7,Confused,14,7,14.0,8.3,398.0,120.0,0.82,Poisoning,Seizures,Multiple Conditions,2,12.6,Air Ambulance,True,Medium,0.594,General Ward
+P0151,2025-10-31 11:53:13,88,Male,O-,102,160,85,92,19,38.0,Confused,13,5,13.3,8.5,351.0,162.0,0.98,Fracture,Difficulty Breathing,Multiple Conditions,0,11.0,Police,True,Medium,0.581,HDU
+P0152,2025-10-31 12:53:13,95,Male,B+,75,124,70,96,20,36.9,Alert,15,1,15.0,7.6,325.0,142.0,1.1,Burns,High Fever,Diabetes,3,47.8,Ambulance,True,Low,0.141,General Ward
+P0153,2025-11-01 06:53:13,13,Male,A-,82,147,89,94,20,38.5,Confused,13,5,13.5,6.8,151.0,98.0,1.0,Pulmonary Embolism,Confusion,Asthma,0,16.6,Police,True,Medium,0.619,General Ward
+P0154,2025-11-02 03:53:13,30,Male,AB-,74,131,84,99,12,37.1,Alert,15,3,11.8,8.4,399.0,148.0,0.84,Fracture,"Seizures, Confusion",Diabetes,1,33.8,Ambulance,True,Low,0.099,General Ward
+P0155,2025-10-30 17:53:13,91,Female,A-,109,135,95,94,20,37.7,Confused,13,5,13.7,5.4,334.0,167.0,0.82,COPD,"High Fever, Difficulty Breathing",Diabetes,5,44.2,Ambulance,False,Medium,0.553,General Ward
+P0156,2025-10-31 04:53:13,51,Female,O-,88,138,78,98,14,37.8,Alert,15,5,12.8,5.6,294.0,85.0,1.18,Pulmonary Embolism,Confusion,Heart Disease,5,19.2,Police,False,Low,0.31,General Ward
+P0157,2025-10-31 14:53:13,40,Female,A+,163,193,51,75,36,35.1,Unresponsive,5,8,9.0,13.7,170.0,371.0,2.63,Pneumonia,"Unconscious, Dizziness",Asthma,0,34.7,Ambulance,True,Critical,0.933,ICU
+P0158,2025-11-02 02:53:13,95,Male,O-,60,115,83,98,14,37.8,Alert,15,5,13.9,6.2,272.0,105.0,1.22,Fracture,Cough,Multiple Conditions,2,3.4,Walk-in,False,Low,0.191,General Ward
+P0159,2025-10-31 19:53:13,48,Female,AB+,121,63,127,88,37,40.6,Unresponsive,5,9,9.7,15.9,174.0,276.0,2.66,Appendicitis,"Dizziness, Seizures",Hypertension,0,40.8,Air Ambulance,True,Critical,0.862,ICU
+P0160,2025-10-31 13:53:13,50,Female,AB+,161,68,51,83,30,35.0,Drowsy,8,9,10.8,17.6,108.0,45.0,3.84,Trauma,Chest Pain,Heart Disease,4,5.4,Ambulance,True,Critical,0.873,ICU
+P0161,2025-10-31 06:53:13,47,Female,O-,104,154,106,89,22,38.5,Confused,11,9,8.9,19.0,193.0,56.0,2.98,Burns,"Confusion, Dizziness, Cough, Abdominal Pain",Heart Disease,3,43.7,Police,True,High,0.811,ICU
+P0162,2025-11-01 10:53:13,53,Male,AB+,80,146,84,94,20,38.0,Alert,14,7,12.8,9.4,349.0,140.0,1.18,Pneumonia,"Severe Pain, Weakness",Asthma,1,19.3,Air Ambulance,False,Medium,0.607,General Ward
+P0163,2025-11-02 01:53:13,9,Male,AB+,80,133,78,98,15,37.6,Alert,15,2,12.1,4.8,264.0,125.0,1.12,Asthma Attack,Seizures,Heart Disease,2,7.7,Ambulance,False,Low,0.009,General Ward
+P0164,2025-11-01 23:53:13,87,Female,A+,82,134,80,95,19,37.8,Confused,14,6,13.6,9.5,233.0,164.0,1.27,Diabetes Emergency,"Difficulty Breathing, Confusion",Heart Disease,2,9.1,Air Ambulance,True,Medium,0.607,General Ward
+P0165,2025-11-01 11:53:13,30,Male,A+,74,133,73,99,15,37.1,Alert,15,3,15.7,5.1,332.0,154.0,1.03,Diabetes Emergency,"Nausea, Dizziness",None,0,9.9,Police,True,Low,0.345,General Ward
+P0166,2025-11-01 09:53:13,60,Female,A+,105,138,83,95,24,37.7,Alert,14,5,13.2,4.6,189.0,89.0,1.07,Stroke,Chest Pain,Multiple Conditions,5,31.1,Police,True,Medium,0.431,HDU
+P0167,2025-11-01 15:53:13,85,Female,O-,132,82,44,71,35,40.6,Unresponsive,4,10,7.7,14.8,173.0,48.0,1.67,Poisoning,"Bleeding, Confusion, Seizures",Multiple Conditions,4,37.4,Ambulance,True,Critical,0.907,ICU
+P0168,2025-10-31 13:53:13,51,Male,AB-,82,151,92,93,22,38.2,Alert,14,6,13.3,6.3,174.0,146.0,0.73,Poisoning,Chest Pain,Hypertension,1,5.6,Walk-in,False,Medium,0.408,HDU
+P0169,2025-11-01 00:53:13,87,Female,A+,67,129,72,95,15,37.4,Alert,15,1,13.6,8.5,240.0,154.0,1.23,Appendicitis,Unconscious,Heart Disease,5,25.6,Police,False,Low,0.028,General Ward
+P0170,2025-10-31 21:53:13,68,Male,B-,144,192,118,87,39,41.0,Unresponsive,8,9,9.8,15.4,110.0,310.0,3.14,COPD,"Seizures, Confusion, Abdominal Pain",Multiple Conditions,3,36.8,Air Ambulance,False,Critical,0.974,ICU
+P0171,2025-11-01 05:53:13,57,Female,AB+,110,144,94,95,18,38.2,Confused,13,5,16.0,6.1,225.0,102.0,1.21,Appendicitis,"Confusion, Abdominal Pain",None,3,5.0,Walk-in,False,Medium,0.439,General Ward
+P0172,2025-10-31 20:53:13,72,Female,AB+,78,122,76,100,13,37.4,Alert,15,4,12.3,9.8,322.0,138.0,1.24,Heart Attack,Cough,Heart Disease,0,4.2,Air Ambulance,True,Low,0.369,General Ward
+P0173,2025-11-02 04:53:13,53,Male,B-,120,177,109,88,28,38.6,Drowsy,9,8,9.2,13.2,150.0,210.0,3.93,Poisoning,Severe Pain,Multiple Conditions,3,14.3,Air Ambulance,False,High,0.676,ICU
+P0174,2025-10-31 10:53:13,36,Female,AB+,92,146,93,93,24,37.6,Alert,14,7,14.4,5.4,304.0,154.0,0.85,Heart Attack,"Abdominal Pain, Weakness",None,2,33.0,Police,True,Medium,0.428,HDU
+P0175,2025-11-02 12:53:13,71,Female,AB-,120,150,99,89,27,39.1,Confused,10,9,7.2,18.5,120.0,51.0,1.78,Trauma,"Bleeding, Chest Pain",Diabetes,0,33.5,Police,False,High,0.74,HDU
+P0176,2025-10-31 16:53:13,63,Male,B-,96,154,88,95,22,38.2,Alert,13,7,14.1,8.6,161.0,97.0,0.87,COPD,Nausea,Heart Disease,5,3.7,Ambulance,True,Medium,0.566,General Ward
+P0177,2025-10-30 22:53:13,18,Female,B-,116,172,93,90,29,39.4,Drowsy,9,7,7.8,19.7,156.0,208.0,2.33,Kidney Failure,"Chest Pain, Seizures",Heart Disease,1,17.4,Police,False,High,0.849,ICU
+P0178,2025-10-30 14:53:13,73,Female,A+,180,197,110,72,39,41.4,Drowsy,6,8,9.3,15.4,131.0,58.0,2.02,COPD,"Bleeding, Cough",Diabetes,1,47.8,Air Ambulance,True,Critical,0.948,ICU
+P0179,2025-10-31 13:53:13,82,Male,B+,173,189,50,83,32,41.4,Unresponsive,4,8,7.4,13.5,176.0,58.0,2.99,Appendicitis,"Difficulty Breathing, Cough, Nausea",Hypertension,2,34.3,Air Ambulance,False,Critical,0.878,ICU
+P0180,2025-10-31 12:53:13,33,Male,B-,93,154,80,94,21,37.7,Alert,13,4,12.3,10.7,260.0,142.0,1.11,Pneumonia,"Severe Pain, Weakness",Multiple Conditions,2,37.4,Air Ambulance,True,Medium,0.58,General Ward
+P0181,2025-10-30 22:53:13,93,Male,A-,94,156,81,93,22,38.0,Alert,14,4,12.4,7.1,371.0,157.0,0.87,Sepsis,"Unconscious, Chest Pain",Multiple Conditions,5,22.5,Walk-in,True,Medium,0.423,General Ward
+P0182,2025-10-30 21:53:13,83,Male,O+,90,144,80,93,21,38.1,Alert,14,4,12.6,8.8,377.0,160.0,1.13,Kidney Failure,Cough,Hypertension,0,30.6,Air Ambulance,True,Medium,0.582,General Ward
+P0183,2025-10-31 02:53:13,30,Male,B+,110,168,94,89,24,38.7,Drowsy,9,9,8.2,17.8,196.0,49.0,3.9,Pulmonary Embolism,"Chest Pain, Nausea, Cough",None,0,26.3,Air Ambulance,True,High,0.698,HDU
+P0184,2025-10-31 16:53:13,67,Male,B-,97,138,86,92,19,37.6,Confused,13,5,15.3,8.7,360.0,110.0,1.25,Pulmonary Embolism,"High Fever, Abdominal Pain",Hypertension,5,29.5,Police,False,Medium,0.642,HDU
+P0185,2025-10-31 22:53:13,64,Female,AB-,92,156,82,95,24,38.1,Confused,14,5,12.0,10.0,232.0,121.0,0.83,Pulmonary Embolism,Unconscious,Hypertension,5,23.5,Ambulance,False,Medium,0.507,General Ward
+P0186,2025-11-01 11:53:13,58,Female,B+,78,125,85,98,14,37.6,Alert,15,2,14.7,10.9,150.0,82.0,1.08,Trauma,Abdominal Pain,None,2,20.2,Air Ambulance,True,Low,0.14,General Ward
+P0187,2025-10-30 18:53:13,87,Female,AB+,82,139,89,94,24,37.5,Confused,14,7,14.8,8.3,157.0,98.0,0.9,Fracture,"Abdominal Pain, Chest Pain",Multiple Conditions,5,23.4,Walk-in,False,Medium,0.623,General Ward
+P0188,2025-10-31 13:53:13,32,Female,A+,76,119,80,99,20,36.5,Alert,15,5,14.6,9.6,372.0,115.0,1.28,Gastrointestinal Bleeding,Seizures,Diabetes,0,30.3,Air Ambulance,True,Low,0.228,General Ward
+P0189,2025-10-31 01:53:13,43,Female,AB-,81,138,93,92,21,38.4,Confused,14,6,12.5,6.1,178.0,158.0,1.17,Poisoning,"Confusion, Chest Pain",None,1,43.5,Air Ambulance,True,Medium,0.485,HDU
+P0190,2025-11-01 23:53:13,64,Male,A-,180,213,41,82,39,39.7,Unresponsive,3,10,10.4,19.0,133.0,221.0,1.56,Gastrointestinal Bleeding,"Seizures, Severe Pain",Heart Disease,2,13.6,Air Ambulance,True,Critical,0.966,ICU
+P0191,2025-11-01 16:53:13,45,Male,A+,117,166,93,89,30,38.9,Confused,11,7,10.8,18.4,157.0,262.0,2.85,Trauma,"Chest Pain, Nausea",None,0,5.5,Ambulance,True,High,0.735,ICU
+P0192,2025-11-02 06:53:13,51,Female,B-,124,171,107,88,29,39.1,Alert,12,6,8.8,17.5,171.0,54.0,1.86,Poisoning,"Seizures, Weakness, High Fever",Asthma,2,38.0,Police,False,High,0.748,HDU
+P0193,2025-10-31 00:53:13,21,Female,B+,169,202,43,73,33,39.6,Unresponsive,7,9,8.6,15.3,162.0,395.0,1.67,Asthma Attack,"Abdominal Pain, Weakness, Unconscious, Seizures",Hypertension,0,32.0,Ambulance,True,Critical,0.961,ICU
+P0194,2025-10-31 05:53:13,36,Female,A-,94,135,89,95,18,38.1,Confused,14,7,14.4,4.4,204.0,94.0,1.05,Gastrointestinal Bleeding,Abdominal Pain,Multiple Conditions,1,31.9,Walk-in,False,Medium,0.497,General Ward
+P0195,2025-10-31 12:53:13,61,Female,AB+,105,159,89,95,23,38.5,Confused,13,4,14.3,7.6,362.0,165.0,0.74,Trauma,Cough,Hypertension,2,5.7,Police,True,Medium,0.459,HDU
+P0196,2025-10-31 00:53:13,40,Female,O+,66,131,75,98,14,36.7,Alert,15,4,15.3,6.5,254.0,109.0,1.22,COPD,Chest Pain,Hypertension,0,31.3,Ambulance,True,Low,0.289,General Ward
+P0197,2025-11-02 10:53:13,22,Female,O-,85,132,83,99,14,37.1,Alert,15,4,14.0,7.2,239.0,99.0,1.06,Pulmonary Embolism,"Cough, Severe Pain",Asthma,2,20.0,Police,True,Low,0.231,General Ward
+P0198,2025-11-02 13:53:13,55,Female,A-,75,140,72,96,20,37.8,Alert,15,3,13.6,4.5,372.0,89.0,0.98,Trauma,Dizziness,Kidney Disease,2,29.6,Police,True,Low,0.214,General Ward
+P0199,2025-11-01 03:53:13,93,Female,AB-,91,160,89,94,19,37.5,Confused,14,4,14.3,8.0,293.0,146.0,0.88,Kidney Failure,"Nausea, Difficulty Breathing",Hypertension,2,24.5,Walk-in,True,Medium,0.433,General Ward
+P0200,2025-11-01 08:53:13,26,Male,B+,78,133,74,100,19,37.0,Alert,15,2,12.7,8.9,271.0,160.0,1.22,Pulmonary Embolism,High Fever,Diabetes,1,40.3,Walk-in,True,Low,0.308,General Ward
+P0201,2025-10-31 05:53:13,38,Female,A+,68,134,73,95,14,37.1,Alert,15,4,12.9,9.2,338.0,133.0,0.93,Burns,"Nausea, Bleeding",Kidney Disease,1,25.7,Walk-in,True,Low,0.005,General Ward
+P0202,2025-11-02 13:53:13,39,Male,A-,77,130,81,98,16,36.9,Alert,15,3,15.1,5.8,296.0,126.0,1.11,Pulmonary Embolism,Confusion,Hypertension,0,32.7,Police,True,Low,0.125,General Ward
+P0203,2025-11-01 15:53:13,20,Male,A-,94,141,87,94,20,37.7,Alert,13,4,15.7,8.6,359.0,175.0,1.08,Burns,Difficulty Breathing,Kidney Disease,2,18.4,Walk-in,True,Medium,0.624,HDU
+P0204,2025-11-01 16:53:13,86,Male,O-,68,134,83,100,17,36.8,Alert,15,1,12.7,4.4,247.0,180.0,0.85,Pulmonary Embolism,Nausea,Heart Disease,1,23.9,Ambulance,False,Low,0.244,General Ward
+P0205,2025-10-31 12:53:13,44,Female,B-,80,113,84,100,16,36.6,Alert,15,1,11.8,9.1,344.0,82.0,1.0,Trauma,Chest Pain,Kidney Disease,5,13.2,Air Ambulance,False,Low,0.132,General Ward
+P0206,2025-11-01 16:53:13,95,Female,O-,72,137,72,99,15,36.5,Alert,15,4,12.0,7.7,398.0,113.0,0.88,Kidney Failure,"Confusion, Seizures",Hypertension,2,40.5,Ambulance,True,Low,0.259,General Ward
+P0207,2025-11-01 11:53:13,86,Male,AB+,112,178,93,93,27,39.0,Drowsy,12,7,7.6,13.5,172.0,58.0,3.48,Poisoning,"Confusion, Nausea, Chest Pain, Dizziness",Heart Disease,5,3.2,Police,True,High,0.731,ICU
+P0208,2025-11-01 10:53:13,32,Male,B-,82,131,84,95,23,37.5,Alert,13,5,11.6,8.4,376.0,162.0,0.76,Pulmonary Embolism,Unconscious,Asthma,0,39.3,Ambulance,True,Medium,0.524,HDU
+P0209,2025-10-31 14:53:13,53,Female,AB-,101,148,84,94,24,38.5,Alert,13,5,13.0,4.8,185.0,122.0,1.12,Heart Attack,Nausea,Asthma,0,44.5,Walk-in,True,Medium,0.425,HDU
+P0210,2025-11-01 00:53:13,67,Male,A+,89,112,79,98,19,37.4,Alert,15,2,12.1,5.9,263.0,104.0,0.8,Stroke,Cough,Hypertension,0,29.6,Air Ambulance,True,Low,0.251,General Ward
+P0211,2025-10-31 04:53:13,82,Male,B-,116,153,109,90,30,39.0,Confused,10,8,7.2,12.9,115.0,382.0,1.94,Heart Attack,Dizziness,Hypertension,3,14.0,Police,True,High,0.717,HDU
+P0212,2025-11-01 10:53:13,63,Male,B+,60,125,73,95,15,37.4,Alert,15,5,14.1,6.9,337.0,170.0,0.84,Fracture,Difficulty Breathing,Heart Disease,1,35.5,Walk-in,True,Low,0.15,General Ward
+P0213,2025-11-01 17:53:13,58,Male,O+,66,139,84,96,18,37.0,Alert,15,4,14.7,8.4,394.0,100.0,0.78,Stroke,Bleeding,Kidney Disease,3,5.8,Walk-in,True,Low,0.183,General Ward
+P0214,2025-11-01 19:53:13,49,Male,B+,77,137,77,95,18,37.6,Alert,15,4,15.4,5.5,268.0,126.0,0.71,Trauma,Severe Pain,Heart Disease,1,21.1,Police,True,Low,0.357,General Ward
+P0215,2025-10-31 03:53:13,31,Female,A+,96,142,95,92,21,38.0,Alert,13,7,15.8,4.9,224.0,145.0,0.75,Kidney Failure,"High Fever, Cough",Heart Disease,2,41.3,Air Ambulance,True,Medium,0.644,HDU
+P0216,2025-11-02 09:53:13,70,Female,O-,100,130,82,95,23,37.8,Alert,14,7,14.9,8.9,303.0,138.0,0.82,Poisoning,"Cough, Chest Pain",Hypertension,0,42.7,Police,True,Medium,0.491,General Ward
+P0217,2025-10-31 15:53:13,85,Male,B-,90,137,83,95,23,38.4,Alert,13,6,13.1,5.9,320.0,108.0,0.74,Stroke,"Confusion, Abdominal Pain",Multiple Conditions,4,22.8,Ambulance,True,Medium,0.513,General Ward
+P0218,2025-11-02 06:53:13,54,Male,O+,85,139,82,92,19,37.8,Alert,14,5,15.4,7.6,307.0,109.0,1.28,Pulmonary Embolism,Nausea,Asthma,5,20.5,Police,False,Medium,0.473,HDU
+P0219,2025-11-01 17:53:13,56,Female,O+,70,130,80,98,20,37.6,Alert,15,4,13.6,8.0,375.0,111.0,1.17,Trauma,"Seizures, Bleeding",Hypertension,2,7.5,Ambulance,True,Low,0.182,General Ward
+P0220,2025-11-02 11:53:13,57,Male,B+,102,152,84,93,19,37.6,Confused,13,7,12.7,5.3,291.0,83.0,0.89,Gastrointestinal Bleeding,Seizures,Diabetes,1,26.1,Air Ambulance,True,Medium,0.43,General Ward
+P0221,2025-11-01 14:53:13,64,Female,AB-,120,76,49,79,40,40.6,Drowsy,7,10,10.6,15.5,169.0,62.0,3.2,Stroke,Weakness,Heart Disease,2,17.5,Air Ambulance,True,Critical,0.858,ICU
+P0222,2025-10-31 18:53:13,25,Female,B-,62,127,84,100,13,37.8,Alert,15,4,12.4,6.2,301.0,174.0,1.25,Pneumonia,"High Fever, Cough",Diabetes,1,18.1,Air Ambulance,True,Low,0.005,General Ward
+P0223,2025-11-02 03:53:13,27,Male,B-,88,124,83,98,16,36.7,Alert,15,4,14.8,6.9,359.0,140.0,0.79,Poisoning,"Confusion, Seizures",Diabetes,2,44.8,Ambulance,True,Low,0.302,General Ward
+P0224,2025-10-31 02:53:13,31,Female,O+,77,124,74,96,14,37.6,Alert,15,3,14.0,4.3,357.0,163.0,0.88,Stroke,"Severe Pain, Chest Pain",Asthma,1,7.8,Ambulance,False,Low,0.382,General Ward
+P0225,2025-10-31 03:53:13,38,Female,O+,95,159,87,92,18,38.3,Confused,13,6,14.1,8.0,367.0,143.0,0.99,Stroke,Seizures,Kidney Disease,0,40.7,Ambulance,True,Medium,0.437,HDU
+P0226,2025-10-30 18:53:13,66,Female,AB-,80,139,81,95,16,36.9,Alert,15,1,13.8,9.4,196.0,89.0,1.15,Kidney Failure,"Dizziness, Bleeding",Heart Disease,5,33.1,Police,True,Low,0.145,General Ward
+P0227,2025-10-30 20:53:13,69,Female,AB-,115,163,100,89,23,38.7,Drowsy,10,7,10.2,16.5,169.0,69.0,2.54,Fracture,"Chest Pain, Nausea",Hypertension,2,15.3,Police,False,High,0.813,ICU
+P0228,2025-10-30 21:53:13,23,Male,A-,64,137,74,100,15,36.9,Alert,15,2,12.1,4.6,323.0,158.0,0.75,Diabetes Emergency,"Abdominal Pain, Weakness",Multiple Conditions,0,9.8,Ambulance,True,Low,0.317,General Ward
+P0229,2025-11-02 13:53:13,94,Female,A+,89,151,80,92,24,37.6,Alert,13,5,14.5,4.2,186.0,155.0,0.87,Heart Attack,"High Fever, Confusion",Heart Disease,0,24.5,Walk-in,True,Medium,0.605,HDU
+P0230,2025-10-31 16:53:13,24,Female,B+,124,167,90,93,23,39.4,Drowsy,12,8,9.8,13.5,167.0,367.0,2.56,Pulmonary Embolism,"Weakness, Difficulty Breathing",Asthma,0,6.4,Police,True,High,0.749,ICU
+P0231,2025-11-02 04:53:13,63,Male,AB-,83,142,89,95,22,38.2,Confused,13,7,12.8,10.0,197.0,87.0,1.2,Sepsis,Chest Pain,Heart Disease,3,32.4,Air Ambulance,True,Medium,0.531,General Ward
+P0232,2025-10-31 04:53:13,22,Male,B+,71,116,80,96,18,36.7,Alert,15,4,14.8,5.9,328.0,138.0,0.86,Heart Attack,"Seizures, Nausea",Multiple Conditions,2,47.4,Air Ambulance,True,Low,0.112,General Ward
+P0233,2025-10-31 00:53:13,21,Female,B-,110,134,80,92,23,37.6,Alert,14,4,15.9,6.7,320.0,95.0,1.07,Burns,Dizziness,None,0,38.2,Air Ambulance,True,Medium,0.566,General Ward
+P0234,2025-10-31 00:53:13,57,Male,A+,108,159,83,95,21,37.8,Confused,14,7,11.7,5.2,315.0,158.0,1.23,Kidney Failure,"Weakness, High Fever",Hypertension,3,34.5,Police,True,Medium,0.542,HDU
+P0235,2025-10-31 19:53:13,57,Female,O-,87,115,71,98,16,37.1,Alert,15,4,14.3,6.5,394.0,112.0,0.72,COPD,Seizures,None,4,39.0,Police,True,Low,0.011,General Ward
+P0236,2025-10-31 21:53:13,76,Female,O+,81,151,87,93,19,38.1,Alert,13,6,12.0,5.2,285.0,84.0,1.09,Appendicitis,"Chest Pain, Cough",Multiple Conditions,2,28.4,Air Ambulance,False,Medium,0.543,General Ward
+P0237,2025-10-30 19:53:13,33,Male,AB-,116,175,100,89,26,38.9,Confused,10,9,9.5,19.8,108.0,243.0,1.62,Sepsis,"Abdominal Pain, Severe Pain, Unconscious, Difficulty Breathing",Asthma,1,28.6,Ambulance,False,High,0.763,ICU
+P0238,2025-10-31 16:53:13,46,Male,AB+,105,139,93,94,19,37.9,Confused,14,5,15.5,8.4,279.0,99.0,1.0,COPD,"Bleeding, Dizziness",Kidney Disease,5,44.9,Air Ambulance,True,Medium,0.531,HDU
+P0239,2025-11-01 16:53:13,47,Female,O+,140,184,53,79,38,35.3,Drowsy,6,8,7.5,13.5,125.0,293.0,2.56,Kidney Failure,"High Fever, Bleeding",None,2,12.8,Ambulance,False,Critical,0.949,ICU
+P0240,2025-10-31 13:53:13,65,Male,A-,79,119,72,98,17,37.4,Alert,15,1,13.3,9.9,361.0,104.0,1.04,Appendicitis,"Nausea, Difficulty Breathing",Hypertension,2,29.0,Walk-in,False,Low,0.132,General Ward
+P0241,2025-11-02 10:53:13,69,Male,B+,68,124,83,97,12,37.1,Alert,15,3,14.6,4.8,286.0,127.0,0.85,Diabetes Emergency,"Nausea, Cough",Diabetes,0,39.5,Police,True,Low,0.258,General Ward
+P0242,2025-11-01 03:53:13,86,Male,AB+,92,139,91,92,22,38.4,Confused,14,4,15.6,6.8,394.0,106.0,0.75,COPD,"Severe Pain, High Fever",Diabetes,5,30.5,Air Ambulance,False,Medium,0.597,General Ward
+P0243,2025-10-31 10:53:13,33,Female,AB-,113,178,93,89,26,39.0,Confused,12,8,8.8,12.2,105.0,59.0,1.51,Poisoning,"Seizures, Unconscious, Difficulty Breathing",Hypertension,2,8.0,Ambulance,True,High,0.819,ICU
+P0244,2025-11-02 08:53:13,32,Male,AB+,81,128,80,97,15,36.6,Alert,15,3,12.3,10.1,386.0,168.0,0.83,Stroke,Difficulty Breathing,None,2,9.9,Air Ambulance,False,Low,0.341,General Ward
+P0245,2025-10-31 10:53:13,84,Female,B+,110,141,85,92,18,38.2,Confused,14,7,12.0,9.0,198.0,166.0,1.17,Heart Attack,"High Fever, Weakness",Multiple Conditions,2,29.0,Walk-in,True,Medium,0.505,HDU
+P0246,2025-10-30 22:53:13,73,Male,O-,87,141,94,92,18,38.0,Confused,14,5,14.7,9.0,334.0,106.0,0.76,Pulmonary Embolism,"Severe Pain, Nausea",Hypertension,5,47.8,Police,False,Medium,0.401,HDU
+P0247,2025-11-01 05:53:13,52,Female,B+,97,131,85,94,19,38.0,Confused,14,5,11.9,9.0,258.0,106.0,0.89,Pulmonary Embolism,"Bleeding, Cough",Hypertension,2,44.5,Police,True,Medium,0.553,General Ward
+P0248,2025-11-01 17:53:13,53,Male,AB-,115,174,94,92,29,38.6,Alert,9,7,7.7,15.8,116.0,223.0,1.6,Poisoning,"Nausea, Abdominal Pain, Difficulty Breathing, High Fever",Diabetes,1,17.1,Ambulance,True,High,0.686,HDU
+P0249,2025-11-01 04:53:13,26,Male,A+,124,168,95,91,23,38.7,Confused,9,8,7.1,17.5,168.0,52.0,3.59,COPD,Difficulty Breathing,Hypertension,2,40.0,Air Ambulance,True,High,0.741,HDU
+P0250,2025-10-31 23:53:13,41,Female,AB-,166,216,41,80,40,35.0,Unresponsive,3,9,8.0,13.9,177.0,52.0,1.91,Poisoning,"Bleeding, Dizziness, Cough, High Fever",Multiple Conditions,3,23.8,Air Ambulance,True,Critical,0.96,ICU
+P0251,2025-11-01 22:53:13,29,Female,B-,148,75,59,72,40,40.2,Drowsy,6,10,8.7,12.3,134.0,54.0,3.83,Sepsis,Bleeding,Asthma,1,4.3,Air Ambulance,True,Critical,0.895,ICU
+P0252,2025-11-02 09:53:13,56,Female,A+,62,139,71,99,13,37.2,Alert,15,4,11.9,8.6,292.0,105.0,0.85,COPD,Difficulty Breathing,None,1,9.0,Air Ambulance,False,Low,0.337,General Ward
+P0253,2025-10-31 00:53:13,62,Female,O-,101,144,88,94,24,38.3,Alert,13,4,14.9,8.2,368.0,91.0,1.02,Fracture,Chest Pain,Multiple Conditions,3,31.7,Walk-in,False,Medium,0.617,General Ward
+P0254,2025-11-01 17:53:13,76,Female,AB+,64,114,70,96,13,37.6,Alert,15,2,15.4,5.5,312.0,145.0,0.96,Heart Attack,Bleeding,Diabetes,3,7.5,Air Ambulance,True,Low,0.009,General Ward
+P0255,2025-10-31 22:53:13,40,Female,O-,127,164,108,89,25,38.8,Confused,9,8,7.0,17.0,171.0,370.0,1.59,Pneumonia,"Confusion, Unconscious, Cough, Nausea",Heart Disease,2,34.4,Walk-in,True,High,0.734,ICU
+P0256,2025-11-02 03:53:13,48,Female,O-,115,169,110,90,29,39.2,Alert,10,8,9.9,15.8,144.0,318.0,3.8,Heart Attack,"High Fever, Bleeding, Weakness, Dizziness",Multiple Conditions,1,38.3,Police,False,High,0.706,ICU
+P0257,2025-10-30 15:53:13,45,Male,O-,125,163,105,90,25,38.7,Alert,9,8,10.5,14.9,116.0,65.0,3.52,Heart Attack,"Difficulty Breathing, Unconscious, Severe Pain, Abdominal Pain",Diabetes,2,23.6,Walk-in,True,High,0.804,HDU
+P0258,2025-10-30 22:53:13,92,Male,A+,90,124,84,95,13,37.5,Alert,15,5,15.0,10.6,356.0,84.0,0.76,Pulmonary Embolism,Seizures,Hypertension,5,35.1,Walk-in,True,Low,0.177,General Ward
+P0259,2025-11-01 09:53:13,85,Female,AB-,64,113,76,98,18,37.5,Alert,15,1,12.6,9.7,235.0,131.0,0.75,Gastrointestinal Bleeding,"Dizziness, Abdominal Pain",Multiple Conditions,4,7.7,Walk-in,True,Low,0.169,General Ward
+P0260,2025-10-31 22:53:13,94,Female,O-,116,175,101,88,29,38.6,Alert,9,6,8.4,15.2,177.0,53.0,3.15,Gastrointestinal Bleeding,Dizziness,Diabetes,5,20.4,Police,True,High,0.794,HDU
+P0261,2025-10-30 17:53:13,93,Male,O+,100,136,94,94,24,38.3,Confused,13,6,11.9,7.8,247.0,152.0,1.23,Sepsis,Difficulty Breathing,Heart Disease,5,25.3,Police,True,Medium,0.406,HDU
+P0262,2025-11-01 21:53:13,64,Female,A-,61,136,81,97,20,37.0,Alert,15,1,14.9,10.6,262.0,137.0,0.7,Poisoning,Seizures,Diabetes,5,14.0,Police,False,Low,0.229,General Ward
+P0263,2025-10-31 09:53:13,63,Male,AB-,98,136,91,95,18,37.6,Confused,14,4,11.9,7.0,183.0,101.0,0.75,COPD,"Bleeding, Unconscious",Multiple Conditions,3,30.7,Air Ambulance,True,Medium,0.583,General Ward
+P0264,2025-10-31 23:53:13,69,Female,O-,90,132,73,100,15,37.1,Alert,15,1,14.9,10.6,242.0,175.0,1.06,Stroke,Seizures,Hypertension,1,2.4,Police,True,Low,0.047,General Ward
+P0265,2025-10-30 22:53:13,49,Male,B+,105,148,93,92,20,38.4,Alert,13,7,11.5,7.8,167.0,84.0,0.99,Stroke,"Seizures, Weakness",Diabetes,4,40.1,Air Ambulance,True,Medium,0.59,HDU
+P0266,2025-11-01 23:53:13,79,Male,AB-,171,81,47,80,36,35.3,Unresponsive,8,9,9.6,18.9,171.0,359.0,2.9,Heart Attack,"Unconscious, Confusion",Hypertension,4,36.2,Ambulance,True,Critical,0.985,ICU
+P0267,2025-10-31 21:53:13,73,Male,B-,165,217,57,82,37,35.4,Drowsy,5,9,7.7,12.2,153.0,51.0,2.85,Gastrointestinal Bleeding,"Bleeding, Difficulty Breathing",Diabetes,5,45.7,Air Ambulance,False,Critical,0.875,ICU
+P0268,2025-11-01 09:53:13,18,Female,O+,90,134,93,94,20,37.9,Alert,13,5,12.6,8.2,209.0,131.0,1.0,Heart Attack,"Chest Pain, Seizures",None,0,26.8,Air Ambulance,True,Medium,0.407,General Ward
+P0269,2025-10-31 14:53:13,57,Male,B-,117,170,94,90,28,38.9,Drowsy,10,7,8.5,19.9,178.0,285.0,1.6,Fracture,"Unconscious, Bleeding, Dizziness, High Fever",Multiple Conditions,3,3.4,Ambulance,False,High,0.77,HDU
+P0270,2025-11-01 21:53:13,83,Female,A+,103,147,82,94,18,37.9,Alert,13,6,15.5,5.5,276.0,160.0,1.23,Stroke,"Bleeding, Severe Pain",Heart Disease,3,16.7,Police,True,Medium,0.404,General Ward
+P0271,2025-11-01 10:53:13,65,Male,B+,117,178,105,91,30,38.6,Drowsy,9,6,10.6,18.5,145.0,394.0,3.57,Kidney Failure,"Abdominal Pain, Cough",Multiple Conditions,2,6.4,Ambulance,True,High,0.739,ICU
+P0272,2025-10-30 14:53:13,94,Female,B-,126,169,110,90,25,38.7,Confused,11,6,8.1,19.2,171.0,239.0,1.78,Heart Attack,"Confusion, Severe Pain",Multiple Conditions,1,3.6,Walk-in,True,High,0.675,ICU
+P0273,2025-10-31 12:53:13,63,Female,B-,101,130,88,95,18,38.4,Alert,14,7,15.3,6.8,180.0,132.0,1.0,Gastrointestinal Bleeding,Chest Pain,Hypertension,4,44.1,Police,True,Medium,0.479,General Ward
+P0274,2025-10-31 06:53:13,42,Male,B-,113,180,92,89,25,38.7,Confused,9,6,7.1,15.5,102.0,387.0,2.12,Poisoning,"Seizures, Chest Pain",Heart Disease,1,25.2,Police,True,High,0.805,ICU
+P0275,2025-11-02 13:53:13,54,Male,A-,109,131,92,94,24,38.2,Alert,13,7,11.7,8.3,258.0,90.0,0.73,Pneumonia,"Weakness, Abdominal Pain",None,3,29.8,Ambulance,True,Medium,0.616,HDU
+P0276,2025-10-31 23:53:13,90,Female,A-,100,160,80,95,22,37.8,Alert,13,4,11.6,9.0,298.0,164.0,1.24,Appendicitis,"Weakness, Nausea",Heart Disease,1,9.3,Air Ambulance,True,Medium,0.415,HDU
+P0277,2025-10-31 02:53:13,89,Female,AB+,108,147,84,93,21,37.8,Confused,14,6,15.9,7.6,314.0,94.0,0.84,Trauma,"Seizures, Severe Pain",Hypertension,1,30.9,Walk-in,True,Medium,0.485,HDU
+P0278,2025-11-02 05:53:13,62,Female,AB+,70,115,73,98,12,37.1,Alert,15,1,14.4,8.9,267.0,101.0,0.99,Kidney Failure,"Severe Pain, Weakness",Heart Disease,0,39.7,Walk-in,True,Low,0.145,General Ward
+P0279,2025-11-02 00:53:13,57,Male,AB+,86,150,91,92,18,37.7,Confused,13,5,15.5,9.0,235.0,135.0,0.81,Sepsis,Bleeding,None,5,1.5,Ambulance,False,Medium,0.495,HDU
+P0280,2025-11-02 08:53:13,49,Male,AB-,91,151,85,95,23,37.6,Alert,13,5,12.4,6.6,244.0,140.0,1.29,Fracture,Abdominal Pain,Hypertension,2,41.1,Walk-in,True,Medium,0.482,HDU
+P0281,2025-10-31 12:53:13,9,Female,B-,102,175,105,93,23,38.7,Confused,11,9,9.1,13.4,171.0,297.0,2.68,Poisoning,"Dizziness, Unconscious, Abdominal Pain, Chest Pain",Asthma,0,10.9,Walk-in,True,High,0.823,HDU
+P0282,2025-10-31 14:53:13,93,Female,B+,86,121,78,99,13,36.7,Alert,15,1,12.8,7.6,208.0,84.0,1.01,Pulmonary Embolism,"Nausea, Weakness",Multiple Conditions,3,18.0,Air Ambulance,True,Low,0.127,General Ward
+P0283,2025-11-02 13:53:13,23,Female,A-,177,185,125,73,29,35.0,Drowsy,5,8,9.7,14.0,175.0,63.0,3.26,Appendicitis,"Chest Pain, Bleeding, Cough",Hypertension,2,45.4,Air Ambulance,True,Critical,0.964,ICU
+P0284,2025-11-02 11:53:13,56,Male,O+,67,133,76,98,15,37.2,Alert,15,5,14.9,9.1,265.0,159.0,0.89,Diabetes Emergency,"Abdominal Pain, Cough",Hypertension,3,10.5,Air Ambulance,False,Low,0.341,General Ward
+P0285,2025-10-31 05:53:13,22,Male,AB+,100,165,101,90,25,38.9,Drowsy,12,8,8.3,12.2,179.0,231.0,2.92,Poisoning,"Weakness, Severe Pain, Abdominal Pain, Difficulty Breathing",Multiple Conditions,0,9.4,Air Ambulance,True,High,0.764,HDU
+P0286,2025-11-02 00:53:13,20,Male,A+,82,129,85,95,14,36.8,Alert,15,4,12.8,5.6,315.0,87.0,0.73,Gastrointestinal Bleeding,High Fever,Asthma,1,41.3,Police,True,Low,0.156,General Ward
+P0287,2025-11-01 07:53:13,53,Male,O+,87,116,74,96,16,37.1,Alert,15,4,12.2,8.0,228.0,100.0,1.13,Pulmonary Embolism,"Severe Pain, Chest Pain",Heart Disease,3,21.7,Walk-in,False,Low,0.242,General Ward
+P0288,2025-11-02 09:53:13,58,Female,O-,98,131,82,94,23,38.4,Confused,14,6,13.3,9.8,362.0,122.0,0.81,Sepsis,"Nausea, Weakness",Asthma,0,33.7,Walk-in,True,Medium,0.575,General Ward
+P0289,2025-10-31 11:53:13,48,Female,A-,103,153,86,95,21,38.5,Alert,14,4,14.9,7.5,345.0,121.0,0.8,Poisoning,Nausea,Hypertension,5,4.0,Ambulance,True,Medium,0.495,General Ward
+P0290,2025-10-31 17:53:13,30,Female,A-,129,154,100,93,29,39.0,Alert,9,7,9.9,15.5,147.0,48.0,3.02,Poisoning,"Difficulty Breathing, Confusion, Weakness",Hypertension,0,4.2,Walk-in,False,High,0.681,HDU
+P0291,2025-11-01 14:53:13,62,Male,O-,61,136,73,98,16,37.1,Alert,15,5,11.5,9.4,342.0,173.0,0.92,Poisoning,Chest Pain,Diabetes,0,1.8,Air Ambulance,True,Low,0.135,General Ward
+P0292,2025-11-01 11:53:13,43,Male,B+,73,126,73,97,17,37.2,Alert,15,2,14.3,10.5,249.0,123.0,0.84,Pneumonia,"Seizures, High Fever",None,2,19.6,Ambulance,True,Low,0.005,General Ward
+P0293,2025-11-02 13:53:13,86,Female,AB-,102,178,96,91,26,39.3,Confused,9,7,8.0,12.8,132.0,59.0,2.33,Pneumonia,"Difficulty Breathing, Seizures, Chest Pain, Unconscious",Heart Disease,5,18.7,Air Ambulance,True,High,0.751,ICU
+P0294,2025-11-02 09:53:13,18,Male,AB+,83,123,77,99,13,36.6,Alert,15,3,13.7,5.4,244.0,144.0,0.84,Diabetes Emergency,"Cough, Seizures",Kidney Disease,2,13.7,Walk-in,True,Low,0.315,General Ward
+P0295,2025-10-31 00:53:13,17,Female,A+,87,133,80,97,15,36.8,Alert,15,1,15.6,8.7,212.0,149.0,1.13,Diabetes Emergency,"Confusion, Seizures",Asthma,0,21.5,Walk-in,False,Low,0.026,General Ward
+P0296,2025-10-31 02:53:13,24,Male,B-,102,155,108,92,25,38.7,Alert,12,9,8.2,17.8,124.0,250.0,2.94,Stroke,"Bleeding, Nausea",Kidney Disease,1,45.7,Ambulance,True,High,0.726,HDU
+P0297,2025-11-02 05:53:13,31,Female,B+,90,135,85,95,18,37.1,Alert,15,1,14.9,10.5,299.0,95.0,1.14,Gastrointestinal Bleeding,"Nausea, Bleeding",Diabetes,2,14.0,Air Ambulance,False,Low,0.242,General Ward
+P0298,2025-10-31 00:53:13,80,Male,B+,106,150,90,92,27,39.0,Confused,12,8,8.5,14.5,199.0,42.0,2.46,Pulmonary Embolism,"Abdominal Pain, Weakness",Diabetes,5,37.1,Police,True,High,0.752,HDU
+P0299,2025-10-31 13:53:13,85,Female,O+,67,117,85,95,17,37.3,Alert,15,1,14.6,8.5,215.0,126.0,1.11,Poisoning,Chest Pain,Diabetes,5,37.1,Ambulance,True,Low,0.285,General Ward
+P0300,2025-10-31 12:53:13,93,Male,B-,73,115,83,97,16,37.2,Alert,15,5,14.5,6.7,227.0,121.0,1.23,Pulmonary Embolism,Dizziness,Hypertension,2,39.2,Police,True,Low,0.299,General Ward
+P0301,2025-11-01 14:53:13,18,Female,A+,62,134,83,99,18,37.4,Alert,15,4,12.3,6.6,326.0,100.0,0.81,Heart Attack,"Unconscious, Severe Pain",None,2,10.0,Walk-in,True,Low,0.073,General Ward
+P0302,2025-11-01 04:53:13,54,Male,B+,89,132,92,92,20,37.6,Alert,13,7,13.7,9.3,152.0,107.0,1.27,Heart Attack,Difficulty Breathing,Kidney Disease,0,25.3,Walk-in,False,Medium,0.551,General Ward
+P0303,2025-10-31 02:53:13,75,Female,AB-,101,158,90,94,24,37.7,Confused,14,7,14.2,10.8,368.0,161.0,0.7,Appendicitis,Chest Pain,Multiple Conditions,2,41.8,Ambulance,True,Medium,0.492,HDU
+P0304,2025-11-02 03:53:13,61,Male,AB-,100,141,81,94,23,37.9,Confused,14,4,13.1,10.6,385.0,128.0,1.1,Pneumonia,"Bleeding, Unconscious",Hypertension,4,34.3,Walk-in,True,Medium,0.432,HDU
+P0305,2025-11-01 23:53:13,57,Female,B+,94,160,83,95,23,38.0,Alert,13,5,14.9,8.6,172.0,123.0,1.13,Pulmonary Embolism,"Weakness, Bleeding",Hypertension,5,34.7,Walk-in,True,Medium,0.638,General Ward
+P0306,2025-11-02 03:53:13,60,Female,A-,82,120,77,99,13,37.3,Alert,15,4,15.6,9.2,331.0,145.0,1.17,Fracture,"Abdominal Pain, Severe Pain",Multiple Conditions,2,12.8,Walk-in,False,Low,0.035,General Ward
+P0307,2025-11-01 01:53:13,88,Male,AB-,87,120,82,99,12,36.9,Alert,15,5,13.9,9.9,395.0,112.0,0.92,Stroke,Difficulty Breathing,Diabetes,3,0.9,Air Ambulance,False,Low,0.126,General Ward
+P0308,2025-10-31 12:53:13,61,Male,AB+,123,171,91,92,27,38.8,Drowsy,9,8,11.0,17.7,148.0,299.0,1.65,Stroke,"Cough, Severe Pain",Heart Disease,0,33.8,Walk-in,False,High,0.821,ICU
+P0309,2025-10-31 06:53:13,45,Female,AB-,81,125,81,98,18,36.6,Alert,15,3,12.8,10.5,325.0,135.0,0.76,Kidney Failure,Cough,Diabetes,1,22.2,Police,True,Low,0.231,General Ward
+P0310,2025-11-01 23:53:13,44,Male,B-,100,130,91,92,23,38.3,Alert,14,7,14.6,5.2,164.0,116.0,0.98,Poisoning,Confusion,None,1,28.7,Police,True,Medium,0.461,General Ward
+P0311,2025-11-01 22:53:13,30,Male,O+,122,175,92,91,28,38.8,Drowsy,12,8,7.0,12.9,112.0,59.0,1.56,Fracture,"Bleeding, Cough, Difficulty Breathing, Unconscious",Asthma,2,18.7,Walk-in,False,High,0.71,HDU
+P0312,2025-11-02 14:53:13,42,Male,O+,82,110,82,99,20,37.5,Alert,15,5,13.7,7.6,296.0,151.0,1.17,Gastrointestinal Bleeding,Dizziness,None,4,9.1,Ambulance,True,Low,0.278,General Ward
+P0313,2025-11-02 02:53:13,18,Male,A+,156,193,57,71,29,40.5,Unresponsive,7,8,8.7,19.6,100.0,389.0,3.15,Stroke,"Unconscious, Nausea",Heart Disease,2,29.3,Air Ambulance,True,Critical,0.881,ICU
+P0314,2025-11-01 20:53:13,41,Male,AB+,86,116,74,99,20,36.8,Alert,15,3,12.7,9.1,256.0,135.0,0.86,Gastrointestinal Bleeding,Weakness,Kidney Disease,2,4.5,Air Ambulance,True,Low,0.271,General Ward
+P0315,2025-11-01 10:53:13,85,Female,B-,111,168,110,92,24,38.9,Alert,11,9,8.5,19.7,125.0,306.0,1.66,Poisoning,"Seizures, Bleeding, High Fever",Hypertension,0,13.5,Walk-in,True,High,0.846,HDU
+P0316,2025-10-30 18:53:13,13,Male,B+,83,138,79,99,19,36.6,Alert,15,3,14.7,10.1,288.0,141.0,1.24,COPD,"Abdominal Pain, Weakness",Hypertension,2,16.9,Walk-in,False,Low,0.271,General Ward
+P0317,2025-10-31 22:53:13,80,Male,AB+,101,146,84,93,19,37.9,Confused,13,6,14.7,5.7,302.0,151.0,0.81,Pneumonia,"Bleeding, Weakness",Multiple Conditions,0,15.0,Walk-in,True,Medium,0.502,General Ward
+P0318,2025-11-02 14:53:13,67,Male,A-,78,111,72,100,16,37.2,Alert,15,4,15.1,4.1,387.0,148.0,1.26,Stroke,"Confusion, Dizziness",Multiple Conditions,4,19.8,Ambulance,False,Low,0.076,General Ward
+P0319,2025-11-01 01:53:13,57,Female,B-,101,160,81,95,19,38.2,Alert,13,4,13.2,4.9,238.0,85.0,1.0,Poisoning,"Difficulty Breathing, Seizures",Hypertension,0,40.0,Walk-in,True,Medium,0.475,General Ward
+P0320,2025-10-30 21:53:13,9,Female,B-,69,139,71,98,19,36.6,Alert,15,1,14.3,6.3,238.0,81.0,1.23,Pulmonary Embolism,"Seizures, Chest Pain",Hypertension,0,21.0,Ambulance,False,Low,0.034,General Ward
+P0321,2025-11-01 13:53:13,31,Female,A+,104,151,88,93,21,37.9,Confused,14,7,15.5,7.8,217.0,179.0,1.09,Stroke,High Fever,Heart Disease,0,36.0,Police,True,Medium,0.621,General Ward
+P0322,2025-11-01 22:53:13,49,Male,O+,83,120,71,96,15,37.7,Alert,15,3,12.0,7.4,274.0,148.0,0.78,Kidney Failure,"Confusion, Cough",Multiple Conditions,0,6.7,Air Ambulance,True,Low,0.317,General Ward
+P0323,2025-10-31 08:53:13,65,Male,A+,86,120,83,99,12,37.1,Alert,15,3,12.8,4.6,257.0,142.0,1.14,Burns,"Abdominal Pain, Difficulty Breathing",Diabetes,1,47.7,Police,True,Low,0.267,General Ward
+P0324,2025-11-01 00:53:13,62,Male,B+,127,168,110,93,24,38.7,Alert,12,6,8.1,13.5,115.0,41.0,2.45,Diabetes Emergency,"Severe Pain, Seizures",Heart Disease,4,23.3,Air Ambulance,False,High,0.779,HDU
+P0325,2025-11-01 22:53:13,73,Female,O+,70,138,71,96,12,36.5,Alert,15,3,12.5,7.3,377.0,90.0,0.81,Diabetes Emergency,"Bleeding, Difficulty Breathing",Heart Disease,5,32.3,Ambulance,True,Low,0.221,General Ward
+P0326,2025-11-01 19:53:13,29,Female,AB-,100,138,86,95,18,38.4,Alert,13,4,14.1,10.4,314.0,99.0,1.12,Diabetes Emergency,Confusion,None,1,14.8,Police,True,Medium,0.533,HDU
+P0327,2025-10-30 21:53:13,46,Female,AB-,91,144,83,95,18,38.0,Alert,13,6,14.6,4.9,161.0,137.0,1.18,Pulmonary Embolism,Cough,Kidney Disease,4,24.0,Air Ambulance,True,Medium,0.441,HDU
+P0328,2025-11-01 01:53:13,77,Female,AB+,65,110,75,99,15,37.3,Alert,15,1,15.5,9.5,264.0,151.0,1.02,Diabetes Emergency,"Cough, Bleeding",Diabetes,0,8.6,Ambulance,True,Low,0.213,General Ward
+P0329,2025-11-01 10:53:13,95,Female,B+,107,155,81,93,24,37.7,Alert,13,6,14.3,10.8,231.0,175.0,1.23,Asthma Attack,"Unconscious, Bleeding",Diabetes,5,47.3,Police,True,Medium,0.606,HDU
+P0330,2025-11-01 16:53:13,48,Male,O+,68,137,76,98,15,36.9,Alert,15,2,14.1,9.7,338.0,96.0,0.84,Burns,"Seizures, High Fever",Kidney Disease,1,5.0,Air Ambulance,False,Low,0.184,General Ward
+P0331,2025-11-02 04:53:13,95,Male,AB+,109,155,95,91,25,38.6,Alert,12,7,8.8,17.2,140.0,62.0,3.01,Pneumonia,Difficulty Breathing,Multiple Conditions,5,36.8,Ambulance,True,High,0.676,ICU
+P0332,2025-11-01 10:53:13,60,Male,A+,83,147,90,92,19,37.6,Confused,13,6,13.0,5.1,164.0,149.0,1.08,Fracture,Chest Pain,None,0,26.4,Ambulance,True,Medium,0.435,General Ward
+P0333,2025-11-01 15:53:13,77,Male,AB-,69,117,82,100,13,37.1,Alert,15,1,12.5,10.7,220.0,88.0,0.9,Burns,Unconscious,Hypertension,4,9.0,Walk-in,False,Low,0.134,General Ward
+P0334,2025-11-01 03:53:13,61,Female,AB+,88,113,78,98,17,37.7,Alert,15,1,15.0,10.0,395.0,158.0,0.79,Appendicitis,"Cough, Nausea",Multiple Conditions,3,5.9,Ambulance,True,Low,0.384,General Ward
+P0335,2025-11-02 12:53:13,69,Male,O+,110,165,103,91,28,39.1,Drowsy,11,7,10.2,17.2,125.0,299.0,2.83,Appendicitis,"Difficulty Breathing, Unconscious, Weakness, Confusion",Diabetes,1,33.9,Walk-in,False,High,0.651,HDU
+P0336,2025-10-31 16:53:13,95,Male,A-,129,161,101,89,26,39.0,Drowsy,12,7,7.8,13.8,175.0,44.0,2.44,Pneumonia,"Chest Pain, Cough, Difficulty Breathing",Multiple Conditions,4,23.1,Ambulance,False,High,0.656,ICU
+P0337,2025-10-31 04:53:13,20,Male,O+,104,135,95,93,23,38.0,Confused,14,7,14.8,7.1,311.0,81.0,0.77,Stroke,Unconscious,None,0,24.4,Walk-in,True,Medium,0.608,General Ward
+P0338,2025-10-31 20:53:13,94,Female,B-,179,190,116,76,34,39.9,Drowsy,8,10,9.4,12.6,169.0,331.0,3.57,Kidney Failure,"Dizziness, Weakness, Severe Pain",Hypertension,2,5.5,Ambulance,True,Critical,0.94,ICU
+P0339,2025-10-30 22:53:13,70,Male,A-,158,84,106,90,28,35.0,Drowsy,7,9,7.2,14.5,194.0,271.0,3.9,Diabetes Emergency,"Abdominal Pain, Weakness, Seizures",Diabetes,5,16.2,Ambulance,True,Critical,0.926,ICU
+P0340,2025-11-01 12:53:13,58,Female,O-,175,182,104,90,29,40.0,Drowsy,8,10,7.6,17.7,199.0,398.0,2.62,Trauma,"Bleeding, Seizures, Unconscious",Hypertension,5,42.8,Ambulance,True,Critical,0.908,ICU
+P0341,2025-10-31 06:53:13,85,Female,A-,60,114,79,99,13,37.1,Alert,15,4,12.9,10.5,190.0,108.0,0.92,Fracture,Cough,Hypertension,3,12.8,Air Ambulance,False,Low,0.391,General Ward
+P0342,2025-10-31 03:53:13,80,Male,AB-,138,205,51,81,29,40.5,Unresponsive,8,8,9.5,17.2,174.0,47.0,1.89,Gastrointestinal Bleeding,"High Fever, Unconscious, Weakness, Difficulty Breathing",Heart Disease,5,42.0,Air Ambulance,True,Critical,0.864,ICU
+P0343,2025-10-31 16:53:13,93,Female,A-,105,173,93,91,28,38.7,Confused,9,8,8.4,16.8,121.0,223.0,1.6,Heart Attack,"Dizziness, Severe Pain",Multiple Conditions,4,27.5,Police,True,High,0.662,HDU
+P0344,2025-11-01 00:53:13,66,Male,A+,81,123,78,97,14,36.6,Alert,15,1,12.7,4.6,368.0,125.0,0.95,Fracture,Chest Pain,Heart Disease,3,43.0,Ambulance,True,Low,0.137,General Ward
+P0345,2025-10-30 23:53:13,24,Female,O-,77,132,75,100,18,37.0,Alert,15,5,13.3,4.1,346.0,140.0,0.75,Sepsis,Seizures,Kidney Disease,1,1.2,Police,True,Low,0.374,General Ward
+P0346,2025-10-31 23:53:13,86,Female,AB+,103,130,94,93,23,37.9,Alert,13,5,14.9,5.3,324.0,157.0,1.06,COPD,Severe Pain,Heart Disease,2,18.1,Ambulance,False,Medium,0.475,HDU
+P0347,2025-10-31 10:53:13,21,Female,O+,91,141,93,94,18,38.4,Confused,14,6,12.3,8.2,286.0,118.0,1.21,Kidney Failure,"Dizziness, Bleeding",Kidney Disease,0,47.8,Ambulance,True,Medium,0.562,HDU
+P0348,2025-10-31 09:53:13,89,Male,O-,98,155,81,94,24,37.9,Alert,14,7,12.0,10.0,388.0,115.0,1.18,COPD,"Chest Pain, Seizures",Multiple Conditions,2,24.6,Walk-in,True,Medium,0.477,General Ward
+P0349,2025-11-01 22:53:13,66,Male,A+,105,141,90,94,19,38.5,Confused,13,7,12.4,8.5,357.0,160.0,1.05,Stroke,Weakness,Multiple Conditions,3,25.1,Police,True,Medium,0.425,HDU
+P0350,2025-10-31 14:53:13,17,Female,AB+,117,155,100,89,23,38.6,Confused,9,7,7.1,17.7,192.0,42.0,3.96,Gastrointestinal Bleeding,"High Fever, Severe Pain, Dizziness",Kidney Disease,2,14.6,Walk-in,True,High,0.795,ICU
+P0351,2025-10-31 09:53:13,73,Male,B+,80,150,83,92,21,38.4,Alert,13,5,12.8,10.3,173.0,129.0,0.92,Burns,"Difficulty Breathing, Nausea",Diabetes,3,20.2,Ambulance,False,Medium,0.453,HDU
+P0352,2025-11-01 04:53:13,94,Female,B+,139,180,121,73,33,40.5,Drowsy,4,10,10.0,19.4,119.0,41.0,2.04,Stroke,"Chest Pain, Seizures",Hypertension,5,4.5,Ambulance,True,Critical,0.991,ICU
+P0353,2025-10-31 08:53:13,95,Male,AB-,97,150,89,95,23,38.3,Confused,14,5,12.6,5.4,362.0,152.0,1.28,Poisoning,Abdominal Pain,Heart Disease,3,45.8,Walk-in,True,Medium,0.621,General Ward
+P0354,2025-10-31 22:53:13,59,Female,O+,118,161,101,93,23,38.9,Alert,11,9,8.2,18.6,165.0,69.0,1.79,Diabetes Emergency,"Weakness, High Fever, Seizures",Multiple Conditions,5,4.0,Walk-in,False,High,0.724,HDU
+P0355,2025-11-01 03:53:13,87,Male,AB-,94,148,90,93,22,37.6,Confused,13,5,12.0,5.9,302.0,168.0,1.22,Diabetes Emergency,"Seizures, Abdominal Pain",Multiple Conditions,3,9.9,Walk-in,True,Medium,0.412,General Ward
+P0356,2025-11-01 03:53:13,79,Male,AB-,72,117,70,97,12,37.3,Alert,15,5,15.9,10.4,221.0,164.0,0.94,Trauma,"Dizziness, Chest Pain",Hypertension,3,22.8,Ambulance,True,Low,0.289,General Ward
+P0357,2025-10-31 15:53:13,52,Female,O-,61,122,79,100,19,37.1,Alert,15,1,15.3,10.6,176.0,102.0,1.2,Trauma,Seizures,Hypertension,0,11.3,Air Ambulance,True,Low,0.076,General Ward
+P0358,2025-10-31 10:53:13,18,Male,AB+,85,111,73,95,16,36.6,Alert,15,3,14.6,9.5,245.0,150.0,1.25,Pulmonary Embolism,"Difficulty Breathing, High Fever",Asthma,2,41.4,Police,True,Low,0.355,General Ward
+P0359,2025-11-02 01:53:13,81,Male,O-,95,138,90,95,19,37.6,Confused,13,6,14.0,10.1,315.0,154.0,0.82,Burns,"Chest Pain, Severe Pain",Hypertension,3,32.3,Ambulance,True,Medium,0.447,General Ward
+P0360,2025-11-02 01:53:13,89,Female,AB+,74,130,74,99,13,37.7,Alert,15,2,15.6,6.7,263.0,142.0,0.82,Poisoning,Bleeding,Diabetes,2,8.3,Air Ambulance,False,Low,0.381,General Ward
+P0361,2025-10-31 14:53:13,88,Male,B-,88,124,75,97,12,37.1,Alert,15,5,13.5,5.9,382.0,88.0,0.96,Pneumonia,"Confusion, Seizures",Multiple Conditions,2,21.5,Ambulance,True,Low,0.039,General Ward
+P0362,2025-11-02 14:53:13,71,Female,B+,137,79,116,71,38,35.1,Drowsy,3,8,9.3,13.9,153.0,377.0,2.48,Trauma,"Nausea, Severe Pain, High Fever",Diabetes,5,30.8,Air Ambulance,True,Critical,0.939,ICU
+P0363,2025-11-02 13:53:13,56,Female,AB+,89,132,77,96,17,37.4,Alert,15,2,12.3,10.3,185.0,81.0,0.98,Gastrointestinal Bleeding,High Fever,Diabetes,1,42.4,Police,False,Low,0.272,General Ward
+P0364,2025-10-31 01:53:13,33,Female,B-,127,182,118,86,36,35.1,Drowsy,3,9,10.2,14.7,149.0,309.0,2.13,Sepsis,Seizures,Heart Disease,2,42.8,Air Ambulance,True,Critical,0.979,ICU
+P0365,2025-11-01 03:53:13,61,Male,B+,107,137,84,94,21,37.5,Confused,14,5,14.8,5.4,389.0,144.0,1.28,Kidney Failure,Bleeding,Multiple Conditions,3,42.7,Police,True,Medium,0.636,General Ward
+P0366,2025-11-02 09:53:13,24,Female,A-,85,124,81,97,13,37.8,Alert,15,4,15.7,5.0,320.0,132.0,0.87,Kidney Failure,Bleeding,Asthma,1,14.2,Air Ambulance,True,Low,0.006,General Ward
+P0367,2025-11-02 02:53:13,68,Male,O-,80,143,91,92,18,37.8,Confused,14,5,15.8,9.0,186.0,153.0,0.96,Asthma Attack,Chest Pain,Heart Disease,1,44.8,Air Ambulance,True,Medium,0.506,General Ward
+P0368,2025-10-31 03:53:13,74,Male,O+,128,160,108,89,25,38.8,Confused,10,8,8.2,14.4,193.0,237.0,1.74,Burns,"Confusion, Dizziness, Seizures",Multiple Conditions,3,17.3,Air Ambulance,False,High,0.842,HDU
+P0369,2025-11-02 01:53:13,95,Female,A-,64,129,79,96,20,37.0,Alert,15,5,13.9,8.0,223.0,156.0,0.94,Fracture,"Abdominal Pain, Confusion",Hypertension,0,40.4,Air Ambulance,True,Low,0.022,General Ward
+P0370,2025-11-01 07:53:13,91,Female,O-,110,177,91,88,30,39.2,Alert,10,7,9.2,19.7,114.0,67.0,2.25,Poisoning,"Unconscious, Cough, Severe Pain, Difficulty Breathing",Hypertension,4,0.5,Ambulance,True,High,0.754,ICU
+P0371,2025-11-01 17:53:13,65,Female,O+,89,113,79,98,19,37.8,Alert,15,2,15.3,7.8,355.0,148.0,1.22,Pneumonia,"High Fever, Dizziness",Hypertension,5,9.3,Ambulance,True,Low,0.263,General Ward
+P0372,2025-10-31 17:53:13,57,Female,O-,89,151,83,95,20,38.2,Confused,14,4,13.6,9.7,187.0,108.0,0.77,Asthma Attack,Unconscious,Heart Disease,5,2.1,Police,True,Medium,0.411,General Ward
+P0373,2025-10-30 22:53:13,32,Female,A+,111,166,106,89,27,39.4,Drowsy,12,6,7.7,13.2,166.0,57.0,2.2,Stroke,"Weakness, Difficulty Breathing, Dizziness",Multiple Conditions,1,18.4,Air Ambulance,True,High,0.765,ICU
+P0374,2025-10-31 15:53:13,26,Female,AB-,119,176,102,88,22,38.5,Drowsy,10,7,7.4,12.8,193.0,54.0,1.76,Trauma,"Abdominal Pain, Weakness, Difficulty Breathing, Chest Pain",Hypertension,2,5.9,Police,False,High,0.738,ICU
+P0375,2025-10-30 19:53:13,68,Female,O+,120,168,107,89,25,38.8,Confused,11,7,7.8,13.3,181.0,64.0,3.07,Stroke,"Chest Pain, High Fever",Hypertension,3,17.6,Ambulance,True,High,0.718,ICU
+P0376,2025-11-01 06:53:13,46,Female,AB-,79,138,74,95,19,37.1,Alert,15,4,15.4,8.0,182.0,132.0,0.76,Appendicitis,Chest Pain,Heart Disease,2,1.6,Police,True,Low,0.369,General Ward
+P0377,2025-11-02 07:53:13,51,Male,AB+,77,128,77,99,20,36.9,Alert,15,5,11.8,8.9,178.0,127.0,1.25,Heart Attack,Chest Pain,Diabetes,1,20.5,Police,False,Low,0.134,General Ward
+P0378,2025-10-31 07:53:13,57,Female,A+,75,112,71,97,13,37.7,Alert,15,5,14.8,10.5,372.0,128.0,0.78,Diabetes Emergency,Difficulty Breathing,Kidney Disease,1,24.1,Ambulance,True,Low,0.26,General Ward
+P0379,2025-10-31 19:53:13,92,Male,A+,61,110,76,99,18,37.4,Alert,15,1,14.0,4.4,341.0,150.0,0.96,Pulmonary Embolism,Nausea,Diabetes,2,43.1,Ambulance,False,Low,0.141,General Ward
+P0380,2025-10-30 17:53:13,47,Male,A+,93,153,81,92,24,38.2,Alert,13,4,12.1,5.3,161.0,115.0,1.09,Diabetes Emergency,"High Fever, Unconscious",Hypertension,0,23.2,Air Ambulance,True,Medium,0.419,HDU
+P0381,2025-11-01 08:53:13,88,Female,B-,102,139,91,94,24,38.2,Confused,14,4,11.7,10.3,326.0,142.0,0.87,Sepsis,Bleeding,Diabetes,5,6.3,Walk-in,True,Medium,0.409,HDU
+P0382,2025-10-31 23:53:13,64,Male,A+,86,111,78,97,18,36.9,Alert,15,1,11.8,10.0,246.0,82.0,0.93,Sepsis,Severe Pain,Hypertension,3,9.3,Air Ambulance,False,Low,0.213,General Ward
+P0383,2025-11-01 08:53:13,76,Male,AB-,126,179,98,92,25,39.3,Confused,12,9,10.1,19.4,175.0,311.0,3.65,Pulmonary Embolism,"Unconscious, Cough, Abdominal Pain, Confusion",Multiple Conditions,3,8.2,Police,False,High,0.799,HDU
+P0384,2025-10-30 15:53:13,90,Female,A-,124,167,99,90,28,38.5,Confused,11,8,9.6,18.3,181.0,225.0,3.59,Diabetes Emergency,"Nausea, Chest Pain, Abdominal Pain, Cough",Diabetes,2,2.3,Air Ambulance,False,High,0.778,HDU
+P0385,2025-10-31 17:53:13,83,Male,AB+,119,167,100,88,29,38.7,Confused,11,9,7.5,17.0,115.0,59.0,3.14,Pulmonary Embolism,"Chest Pain, Confusion, Severe Pain",Multiple Conditions,2,45.7,Ambulance,True,High,0.653,HDU
+P0386,2025-10-31 15:53:13,84,Male,AB-,62,126,84,95,20,36.6,Alert,15,2,13.0,6.6,356.0,122.0,1.09,Heart Attack,Seizures,Diabetes,3,16.4,Police,False,Low,0.359,General Ward
+P0387,2025-11-02 05:53:13,65,Male,AB-,69,139,74,99,12,36.6,Alert,15,2,15.1,7.6,345.0,131.0,1.05,Pneumonia,"Unconscious, Chest Pain",Diabetes,5,18.6,Walk-in,False,Low,0.031,General Ward
+P0388,2025-10-31 10:53:13,36,Female,A-,108,146,81,95,23,38.0,Confused,14,6,12.4,8.0,378.0,113.0,1.18,Gastrointestinal Bleeding,Nausea,Diabetes,0,36.0,Police,False,Medium,0.511,HDU
+P0389,2025-10-31 09:53:13,20,Male,AB-,115,169,97,91,28,38.7,Alert,10,9,9.7,17.3,161.0,64.0,1.7,Burns,"Unconscious, Nausea",Heart Disease,1,43.2,Walk-in,False,High,0.683,ICU
+P0390,2025-11-02 09:53:13,62,Female,A-,87,111,83,95,14,37.8,Alert,15,2,13.8,7.7,247.0,122.0,0.78,Stroke,"Difficulty Breathing, Seizures",Diabetes,4,28.6,Police,True,Low,0.043,General Ward
+P0391,2025-11-01 20:53:13,54,Female,O-,173,69,122,88,36,35.4,Unresponsive,8,10,8.8,14.6,118.0,62.0,2.08,Poisoning,"Chest Pain, Unconscious, Confusion",Heart Disease,2,15.8,Air Ambulance,True,Critical,0.964,ICU
+P0392,2025-11-02 09:53:13,24,Female,AB-,91,139,85,92,20,37.8,Confused,13,5,12.8,10.4,397.0,155.0,1.25,Heart Attack,"High Fever, Difficulty Breathing",Kidney Disease,2,26.7,Walk-in,True,Medium,0.407,HDU
+P0393,2025-11-02 00:53:13,71,Male,O-,86,110,81,96,16,37.7,Alert,15,5,13.4,7.1,182.0,125.0,1.25,Gastrointestinal Bleeding,"Weakness, Nausea",Hypertension,1,4.6,Police,False,Low,0.397,General Ward
+P0394,2025-11-01 22:53:13,63,Male,A-,130,70,114,80,28,41.4,Unresponsive,4,10,9.6,19.0,104.0,59.0,2.97,Appendicitis,"Bleeding, Nausea",Diabetes,5,39.2,Air Ambulance,True,Critical,0.925,ICU
+P0395,2025-10-31 05:53:13,42,Male,A+,124,211,122,83,39,35.2,Drowsy,8,9,8.9,17.3,118.0,246.0,3.17,Kidney Failure,"Unconscious, Seizures, Confusion, Nausea",Heart Disease,2,10.9,Ambulance,True,Critical,0.913,ICU
+P0396,2025-11-02 08:53:13,78,Male,B+,130,160,93,90,28,39.2,Confused,12,9,9.7,12.2,127.0,370.0,1.65,Sepsis,"Dizziness, Seizures, Weakness",Heart Disease,3,38.9,Air Ambulance,True,High,0.702,HDU
+P0397,2025-10-31 12:53:13,63,Female,A+,114,163,97,92,24,39.0,Drowsy,9,8,7.5,16.3,195.0,276.0,3.78,Asthma Attack,Confusion,Hypertension,1,17.7,Walk-in,True,High,0.818,ICU
+P0398,2025-11-02 05:53:13,65,Female,AB-,86,147,87,92,18,38.3,Alert,14,7,11.7,6.0,156.0,143.0,1.11,Kidney Failure,Abdominal Pain,Heart Disease,1,31.6,Air Ambulance,True,Medium,0.615,General Ward
+P0399,2025-10-31 10:53:13,3,Female,A+,123,176,107,92,24,38.6,Drowsy,12,7,10.3,18.9,178.0,349.0,2.19,Pneumonia,Bleeding,Hypertension,1,18.4,Air Ambulance,False,High,0.694,ICU
+P0400,2025-10-31 11:53:13,74,Male,O+,115,173,102,90,30,39.2,Confused,10,6,8.6,13.9,137.0,329.0,1.86,Pneumonia,Confusion,Hypertension,3,10.4,Walk-in,True,High,0.667,ICU
+P0401,2025-10-30 15:53:13,91,Male,A+,75,118,83,97,17,37.6,Alert,15,1,12.9,8.0,252.0,81.0,1.11,Fracture,"Seizures, Dizziness",Multiple Conditions,5,15.8,Walk-in,True,Low,0.193,General Ward
+P0402,2025-10-31 15:53:13,53,Male,O+,104,130,85,92,19,37.7,Alert,13,7,13.7,8.4,281.0,94.0,1.22,Stroke,"Chest Pain, Bleeding",Heart Disease,2,21.2,Ambulance,False,Medium,0.531,General Ward
+P0403,2025-10-31 03:53:13,81,Male,AB-,99,138,95,95,19,38.4,Alert,13,7,11.5,6.9,188.0,87.0,1.29,COPD,Cough,Diabetes,2,26.0,Ambulance,True,Medium,0.415,HDU
+P0404,2025-10-30 20:53:13,85,Male,AB-,80,159,86,94,20,38.3,Confused,14,6,14.3,6.8,214.0,134.0,1.1,Burns,Cough,Diabetes,2,13.8,Walk-in,True,Medium,0.432,HDU
+P0405,2025-10-31 17:53:13,28,Female,O-,105,150,97,89,23,39.4,Drowsy,10,7,7.7,19.0,132.0,210.0,2.56,Diabetes Emergency,"Bleeding, Confusion, Difficulty Breathing",Heart Disease,1,27.1,Walk-in,True,High,0.791,HDU
+P0406,2025-10-31 08:53:13,34,Male,B-,90,130,78,100,14,37.6,Alert,15,5,13.5,8.9,213.0,92.0,1.24,Stroke,"High Fever, Chest Pain",Kidney Disease,2,41.1,Police,True,Low,0.138,General Ward
+P0407,2025-11-01 06:53:13,93,Male,O+,65,139,70,96,19,37.0,Alert,15,2,11.5,6.2,174.0,117.0,0.85,Appendicitis,Dizziness,Heart Disease,3,31.0,Police,False,Low,0.018,General Ward
+P0408,2025-10-30 17:53:13,38,Male,O-,100,144,95,93,21,38.2,Alert,13,6,11.6,10.3,188.0,154.0,1.22,Trauma,Weakness,Hypertension,2,3.2,Ambulance,False,Medium,0.479,HDU
+P0409,2025-10-31 10:53:13,60,Male,AB-,101,157,90,93,22,38.2,Confused,13,7,13.4,8.7,165.0,99.0,1.16,Gastrointestinal Bleeding,"Difficulty Breathing, High Fever",Hypertension,4,2.6,Air Ambulance,True,Medium,0.572,HDU
+P0410,2025-11-01 14:53:13,38,Male,AB+,155,63,114,88,35,35.5,Drowsy,8,8,7.7,16.7,197.0,63.0,3.09,Asthma Attack,Cough,Heart Disease,2,40.3,Air Ambulance,True,Critical,0.991,ICU
+P0411,2025-11-02 10:53:13,77,Female,B+,64,128,80,98,15,37.6,Alert,15,3,15.5,5.2,224.0,150.0,0.86,Asthma Attack,"Seizures, Dizziness",Heart Disease,5,39.9,Air Ambulance,True,Low,0.333,General Ward
+P0412,2025-11-02 13:53:13,13,Male,O+,120,175,99,89,27,39.2,Drowsy,11,6,9.1,13.7,122.0,48.0,2.69,Appendicitis,"Seizures, Unconscious, Weakness",Heart Disease,0,15.8,Ambulance,True,High,0.824,HDU
+P0413,2025-11-01 04:53:13,75,Female,A-,109,141,89,93,21,38.0,Alert,14,7,14.2,8.9,333.0,127.0,0.85,Stroke,"Nausea, Dizziness",Heart Disease,1,14.8,Air Ambulance,False,Medium,0.505,HDU
+P0414,2025-11-01 07:53:13,36,Male,AB+,119,180,106,89,24,38.6,Confused,9,6,8.2,18.1,180.0,54.0,3.15,Pulmonary Embolism,"Bleeding, Abdominal Pain",Hypertension,0,9.3,Ambulance,False,High,0.668,HDU
+P0415,2025-11-02 11:53:13,92,Female,A+,105,161,93,91,30,39.2,Drowsy,10,9,9.7,18.7,171.0,63.0,2.3,Sepsis,"Bleeding, Dizziness, Weakness",Multiple Conditions,2,25.9,Air Ambulance,False,High,0.784,HDU
+P0416,2025-10-31 01:53:13,45,Male,AB-,70,126,70,99,18,37.7,Alert,15,2,12.1,5.3,203.0,124.0,0.9,Appendicitis,Weakness,Kidney Disease,3,14.0,Walk-in,True,Low,0.27,General Ward
+P0417,2025-10-31 05:53:13,70,Male,O+,96,156,83,95,24,37.6,Alert,14,4,12.2,4.9,277.0,149.0,0.71,Burns,"Abdominal Pain, Chest Pain",Multiple Conditions,5,20.7,Police,False,Medium,0.551,HDU
+P0418,2025-11-02 08:53:13,64,Female,AB-,85,115,83,99,18,37.6,Alert,15,1,12.2,6.4,384.0,139.0,0.82,Heart Attack,"Chest Pain, Nausea",Multiple Conditions,3,2.4,Police,True,Low,0.184,General Ward
+P0419,2025-10-31 04:53:13,75,Female,A+,88,135,89,94,21,37.5,Confused,14,4,14.2,6.5,159.0,154.0,0.85,COPD,Cough,Hypertension,3,30.6,Walk-in,True,Medium,0.486,General Ward
+P0420,2025-11-01 14:53:13,58,Male,A-,71,111,74,99,13,37.0,Alert,15,1,13.0,8.5,225.0,120.0,0.81,Appendicitis,"Cough, Dizziness",Kidney Disease,3,40.3,Ambulance,True,Low,0.386,General Ward
+P0421,2025-11-01 10:53:13,27,Male,A+,118,165,96,91,26,39.2,Alert,11,6,9.4,19.3,168.0,48.0,3.46,Appendicitis,"Bleeding, Abdominal Pain",Kidney Disease,2,29.0,Air Ambulance,True,High,0.669,HDU
+P0422,2025-10-31 13:53:13,50,Male,AB+,82,129,84,99,18,37.3,Alert,15,3,13.9,7.3,289.0,114.0,0.89,Poisoning,"High Fever, Nausea",Multiple Conditions,5,10.5,Air Ambulance,True,Low,0.068,General Ward
+P0423,2025-10-30 18:53:13,41,Male,O-,91,132,86,94,20,37.8,Confused,14,7,11.6,8.4,192.0,115.0,0.96,COPD,Abdominal Pain,Multiple Conditions,3,26.9,Police,True,Medium,0.494,HDU
+P0424,2025-11-01 02:53:13,30,Male,A-,106,156,93,92,26,38.7,Alert,12,9,8.4,13.7,190.0,48.0,3.16,Kidney Failure,"Confusion, Abdominal Pain, Cough",Kidney Disease,1,11.2,Air Ambulance,False,High,0.801,HDU
+P0425,2025-11-02 12:53:13,77,Female,A+,86,120,84,100,14,37.4,Alert,15,1,13.2,8.6,394.0,121.0,1.08,COPD,Unconscious,Diabetes,5,29.0,Ambulance,True,Low,0.164,General Ward
+P0426,2025-10-31 04:53:13,37,Female,A-,60,133,82,99,20,37.6,Alert,15,2,13.6,9.1,210.0,127.0,1.13,Appendicitis,"High Fever, Bleeding",Hypertension,0,43.0,Ambulance,False,Low,0.231,General Ward
+P0427,2025-10-30 18:53:13,39,Male,B+,96,150,83,94,24,38.4,Alert,13,7,14.7,4.5,337.0,148.0,0.94,Sepsis,"Weakness, Difficulty Breathing",Asthma,2,46.0,Air Ambulance,True,Medium,0.579,HDU
+P0428,2025-11-02 02:53:13,91,Male,AB+,92,156,81,94,21,38.2,Confused,14,4,12.0,9.9,339.0,138.0,1.17,Fracture,"Weakness, Dizziness",Diabetes,1,7.2,Police,True,Medium,0.453,General Ward
+P0429,2025-10-31 06:53:13,62,Female,O-,87,154,88,94,20,38.2,Confused,14,6,14.1,8.2,340.0,95.0,0.87,Fracture,"Cough, Bleeding",Heart Disease,1,45.4,Police,True,Medium,0.519,General Ward
+P0430,2025-10-31 22:53:13,63,Male,B+,69,137,82,97,15,36.5,Alert,15,2,14.1,5.0,153.0,116.0,1.01,Trauma,"Unconscious, High Fever",Multiple Conditions,4,31.1,Police,True,Low,0.341,General Ward
+P0431,2025-11-02 13:53:13,52,Female,B+,76,125,75,98,18,36.5,Alert,15,1,13.0,6.2,206.0,108.0,1.17,Gastrointestinal Bleeding,Dizziness,Multiple Conditions,3,17.4,Walk-in,True,Low,0.228,General Ward
+P0432,2025-11-02 06:53:13,71,Female,A+,120,153,100,92,23,38.8,Drowsy,9,6,8.8,16.2,124.0,64.0,2.07,Kidney Failure,"Chest Pain, Unconscious",Multiple Conditions,0,26.7,Police,True,High,0.797,ICU
+P0433,2025-10-31 07:53:13,34,Male,B-,78,134,85,98,13,37.2,Alert,15,1,12.9,8.4,199.0,92.0,0.75,Diabetes Emergency,Confusion,Hypertension,1,28.9,Walk-in,True,Low,0.228,General Ward
+P0434,2025-11-01 15:53:13,85,Male,O-,68,134,83,99,16,37.1,Alert,15,2,13.0,7.4,221.0,145.0,0.86,Pneumonia,"Bleeding, Dizziness",Diabetes,0,30.2,Police,False,Low,0.391,General Ward
+P0435,2025-11-01 14:53:13,18,Female,O-,85,132,93,94,18,38.4,Confused,14,5,12.4,4.8,208.0,111.0,0.88,Stroke,"Difficulty Breathing, Dizziness",Multiple Conditions,0,44.6,Police,False,Medium,0.481,HDU
+P0436,2025-11-01 21:53:13,84,Male,AB-,115,170,109,91,26,38.7,Confused,12,8,8.5,14.4,173.0,263.0,2.56,COPD,Abdominal Pain,Multiple Conditions,3,3.1,Air Ambulance,False,High,0.779,HDU
+P0437,2025-11-02 07:53:13,40,Male,B-,122,158,99,90,22,38.8,Confused,11,7,10.2,16.9,144.0,48.0,2.31,Burns,"Chest Pain, Dizziness, Weakness, Nausea",Heart Disease,2,13.8,Walk-in,True,High,0.662,HDU
+P0438,2025-10-31 16:53:13,76,Female,AB+,95,134,82,94,24,38.2,Alert,13,6,14.1,7.9,260.0,113.0,1.03,Heart Attack,"Cough, Chest Pain",Heart Disease,0,37.2,Walk-in,False,Medium,0.639,General Ward
+P0439,2025-10-31 00:53:13,45,Female,B-,91,140,86,94,20,38.1,Alert,13,4,14.4,7.0,352.0,160.0,1.2,Sepsis,"Chest Pain, Unconscious",None,4,47.8,Air Ambulance,True,Medium,0.598,General Ward
+P0440,2025-10-31 19:53:13,85,Male,A-,62,127,73,99,14,37.5,Alert,15,1,14.1,7.3,313.0,99.0,0.74,Trauma,"Nausea, Abdominal Pain",Multiple Conditions,0,31.4,Walk-in,True,Low,0.073,General Ward
+P0441,2025-11-01 19:53:13,34,Female,A+,78,119,70,99,18,36.5,Alert,15,2,13.0,5.1,364.0,138.0,1.16,Kidney Failure,"Dizziness, Abdominal Pain",Asthma,2,37.1,Walk-in,False,Low,0.37,General Ward
+P0442,2025-11-02 08:53:13,22,Male,A-,154,218,44,72,33,41.4,Drowsy,4,9,7.7,19.9,123.0,68.0,1.84,Pneumonia,Weakness,Heart Disease,2,41.7,Air Ambulance,True,Critical,0.881,ICU
+P0443,2025-11-02 12:53:13,32,Male,O+,126,153,92,89,30,39.4,Drowsy,9,7,10.0,13.0,149.0,350.0,2.54,Trauma,Abdominal Pain,Hypertension,2,23.2,Police,True,High,0.839,ICU
+P0444,2025-11-01 21:53:13,65,Female,A-,91,160,89,92,21,38.4,Confused,13,4,14.4,9.7,369.0,82.0,1.28,Appendicitis,High Fever,Heart Disease,0,8.9,Walk-in,False,Medium,0.53,HDU
+P0445,2025-11-02 09:53:13,19,Male,AB+,159,206,113,86,30,41.1,Drowsy,5,8,10.1,12.2,120.0,275.0,3.05,Appendicitis,Seizures,None,0,2.1,Air Ambulance,False,Critical,0.987,ICU
+P0446,2025-11-02 02:53:13,84,Male,B+,60,121,77,95,18,37.8,Alert,15,1,15.9,7.3,254.0,170.0,0.96,Heart Attack,"Nausea, Abdominal Pain",Hypertension,5,6.6,Police,True,Low,0.216,General Ward
+P0447,2025-10-31 15:53:13,33,Male,B+,76,114,74,96,13,37.5,Alert,15,4,12.8,8.3,212.0,105.0,1.14,Diabetes Emergency,"Cough, Nausea",Diabetes,0,36.6,Police,True,Low,0.131,General Ward
+P0448,2025-11-01 15:53:13,63,Male,O+,101,175,96,89,22,38.6,Alert,10,7,8.6,12.1,148.0,238.0,2.63,Burns,"Confusion, Nausea, Difficulty Breathing",Multiple Conditions,4,31.6,Police,False,High,0.717,HDU
+P0449,2025-10-30 21:53:13,92,Female,O-,83,151,90,94,18,38.3,Confused,13,5,11.9,10.8,358.0,92.0,1.13,Burns,"Nausea, Weakness",Heart Disease,4,46.4,Ambulance,True,Medium,0.499,HDU
+P0450,2025-10-31 02:53:13,61,Male,B-,167,202,118,87,33,40.9,Drowsy,5,8,7.4,13.3,163.0,59.0,2.85,Poisoning,"Bleeding, Chest Pain",Multiple Conditions,4,19.0,Air Ambulance,True,Critical,0.996,ICU
+P0451,2025-11-02 05:53:13,88,Female,A+,88,152,89,93,23,38.1,Alert,13,7,12.1,7.4,190.0,177.0,1.29,Heart Attack,Dizziness,Multiple Conditions,1,19.1,Air Ambulance,True,Medium,0.609,HDU
+P0452,2025-11-02 09:53:13,93,Female,A-,103,148,84,93,21,37.6,Confused,14,4,14.4,7.6,281.0,157.0,1.06,Poisoning,"Difficulty Breathing, Confusion",Multiple Conditions,5,7.8,Air Ambulance,False,Medium,0.619,General Ward
+P0453,2025-11-01 06:53:13,85,Female,O+,85,158,95,94,19,38.0,Alert,14,5,15.4,8.7,359.0,176.0,0.95,Trauma,"Cough, Abdominal Pain",Hypertension,5,43.5,Police,True,Medium,0.505,General Ward
+P0454,2025-10-31 11:53:13,40,Female,B-,151,78,121,85,36,40.6,Unresponsive,3,10,7.4,18.7,164.0,43.0,2.4,Trauma,"Weakness, Cough, Chest Pain, Seizures",Kidney Disease,2,27.7,Air Ambulance,True,Critical,0.856,ICU
+P0455,2025-10-30 16:53:13,40,Male,A+,110,140,83,94,21,38.3,Confused,14,6,15.2,6.4,393.0,105.0,0.97,Burns,"Nausea, Cough",None,0,37.0,Police,False,Medium,0.54,HDU
+P0456,2025-10-31 21:53:13,30,Male,O-,102,160,101,92,30,39.2,Alert,11,8,7.4,17.8,164.0,49.0,3.39,Gastrointestinal Bleeding,"Cough, Nausea, Seizures",Hypertension,1,38.8,Police,False,High,0.842,ICU
+P0457,2025-11-01 01:53:13,21,Female,AB+,77,127,75,98,13,36.8,Alert,15,1,14.7,10.4,316.0,165.0,0.79,Fracture,"Weakness, High Fever",Diabetes,2,5.4,Air Ambulance,False,Low,0.326,General Ward
+P0458,2025-10-31 13:53:13,28,Male,B-,104,171,98,88,29,38.7,Drowsy,10,7,10.5,15.5,181.0,44.0,3.64,COPD,"Weakness, Confusion, Cough, Unconscious",Heart Disease,2,20.1,Walk-in,True,High,0.775,HDU
+P0459,2025-10-31 06:53:13,40,Female,O+,111,178,97,90,30,38.9,Drowsy,10,8,10.4,19.9,125.0,226.0,2.84,Appendicitis,"Cough, Seizures",None,2,22.6,Walk-in,True,High,0.742,ICU
+P0460,2025-11-01 00:53:13,53,Male,A+,94,147,81,94,21,38.4,Alert,13,6,11.8,9.0,292.0,175.0,1.14,COPD,"Weakness, Cough",Kidney Disease,1,47.3,Walk-in,True,Medium,0.477,General Ward
+P0461,2025-11-02 02:53:13,25,Female,B+,97,151,90,92,22,37.6,Confused,13,4,14.3,7.7,333.0,153.0,0.85,Fracture,High Fever,Asthma,1,31.3,Ambulance,False,Medium,0.483,HDU
+P0462,2025-11-02 07:53:13,36,Female,O+,122,165,94,90,24,38.6,Confused,10,9,10.5,16.0,118.0,52.0,2.35,Kidney Failure,Confusion,Multiple Conditions,2,1.5,Police,True,High,0.846,ICU
+P0463,2025-10-31 06:53:13,65,Male,A+,72,119,70,99,17,37.6,Alert,15,2,12.3,8.3,195.0,102.0,0.91,Appendicitis,"Unconscious, High Fever",Diabetes,1,34.1,Air Ambulance,False,Low,0.203,General Ward
+P0464,2025-10-31 16:53:13,41,Male,AB+,69,113,81,100,14,37.3,Alert,15,2,15.6,7.5,301.0,180.0,1.25,Pulmonary Embolism,"Abdominal Pain, Nausea",Heart Disease,0,32.3,Ambulance,True,Low,0.135,General Ward
+P0465,2025-10-31 13:53:13,25,Female,A+,81,159,95,92,24,38.0,Confused,14,5,12.8,4.9,341.0,109.0,1.08,Appendicitis,"Weakness, Difficulty Breathing",Heart Disease,0,1.6,Air Ambulance,True,Medium,0.54,General Ward
+P0466,2025-11-01 15:53:13,89,Female,A+,106,131,86,92,20,38.4,Alert,14,4,13.9,4.3,226.0,99.0,1.28,COPD,Confusion,Multiple Conditions,0,32.9,Police,True,Medium,0.425,HDU
+P0467,2025-10-31 23:53:13,50,Male,O-,118,170,109,88,22,39.4,Alert,9,8,7.0,13.9,181.0,397.0,3.57,Diabetes Emergency,"Chest Pain, High Fever, Cough, Unconscious",Diabetes,2,30.0,Walk-in,True,High,0.786,HDU
+P0468,2025-10-31 00:53:13,38,Female,O+,60,123,83,98,16,37.6,Alert,15,2,15.2,7.4,300.0,143.0,0.94,Poisoning,"High Fever, Dizziness",Kidney Disease,0,3.8,Walk-in,False,Low,0.046,General Ward
+P0469,2025-11-01 15:53:13,75,Male,AB+,102,159,92,94,22,37.8,Confused,13,4,13.3,10.2,201.0,89.0,1.21,Burns,Nausea,Diabetes,1,5.7,Air Ambulance,False,Medium,0.608,HDU
+P0470,2025-11-01 10:53:13,67,Male,O+,91,144,84,95,22,38.3,Alert,13,6,11.7,4.1,188.0,166.0,0.85,Trauma,"Severe Pain, Dizziness",Heart Disease,1,19.1,Ambulance,False,Medium,0.526,General Ward
+P0471,2025-11-01 20:53:13,38,Female,A+,74,112,77,99,20,36.9,Alert,15,2,12.1,10.7,164.0,148.0,0.95,Gastrointestinal Bleeding,Unconscious,Asthma,1,34.9,Walk-in,True,Low,0.148,General Ward
+P0472,2025-10-31 04:53:13,39,Female,A+,81,156,92,92,24,37.7,Alert,13,4,14.4,10.4,384.0,144.0,0.87,Trauma,"Nausea, Cough",Asthma,2,32.9,Walk-in,False,Medium,0.486,General Ward
+P0473,2025-10-31 11:53:13,16,Female,B-,69,130,75,98,16,37.6,Alert,15,3,14.8,7.0,225.0,84.0,0.95,Stroke,Weakness,Asthma,1,40.4,Walk-in,True,Low,0.083,General Ward
+P0474,2025-10-31 05:53:13,88,Female,O-,94,141,90,94,23,37.9,Alert,13,5,14.7,8.0,387.0,153.0,1.17,Kidney Failure,"Seizures, Dizziness",Multiple Conditions,1,10.6,Police,True,Medium,0.427,General Ward
+P0475,2025-10-31 22:53:13,10,Male,B-,77,138,75,100,18,37.7,Alert,15,4,12.3,7.1,323.0,119.0,1.1,Appendicitis,Dizziness,Diabetes,0,27.8,Air Ambulance,False,Low,0.06,General Ward
+P0476,2025-10-31 22:53:13,69,Female,AB-,89,134,71,100,13,37.5,Alert,15,1,11.6,10.4,367.0,113.0,0.75,Trauma,Severe Pain,Diabetes,2,40.4,Police,False,Low,0.249,General Ward
+P0477,2025-11-01 17:53:13,50,Male,AB+,103,175,107,89,24,38.7,Alert,12,7,9.2,17.0,170.0,48.0,3.94,Asthma Attack,"Nausea, Difficulty Breathing",Kidney Disease,3,6.9,Ambulance,True,High,0.726,HDU
+P0478,2025-10-30 23:53:13,62,Female,O-,98,135,94,92,21,38.4,Confused,14,4,15.5,4.5,184.0,110.0,0.94,Trauma,Dizziness,Hypertension,0,14.4,Police,True,Medium,0.551,General Ward
+P0479,2025-11-01 22:53:13,37,Male,AB-,68,116,78,99,12,37.1,Alert,15,2,11.7,5.7,227.0,125.0,0.96,Gastrointestinal Bleeding,"Cough, Dizziness",None,1,31.8,Air Ambulance,True,Low,0.221,General Ward
+P0480,2025-11-02 04:53:13,74,Female,B-,75,122,82,95,16,37.4,Alert,15,3,13.2,7.6,398.0,122.0,1.12,Pulmonary Embolism,"Confusion, Severe Pain",Heart Disease,0,13.9,Air Ambulance,True,Low,0.365,General Ward
+P0481,2025-11-02 01:53:13,65,Male,A-,62,115,81,95,14,37.2,Alert,15,2,15.0,10.0,152.0,81.0,1.18,Diabetes Emergency,Unconscious,Hypertension,2,30.5,Air Ambulance,True,Low,0.314,General Ward
+P0482,2025-11-01 13:53:13,62,Male,A-,102,172,92,88,28,39.3,Alert,10,6,9.9,15.1,163.0,364.0,3.01,Stroke,"Cough, Dizziness, Unconscious",Multiple Conditions,4,21.5,Ambulance,True,High,0.666,ICU
+P0483,2025-10-30 23:53:13,83,Male,A-,124,152,96,89,27,39.3,Alert,10,9,9.5,16.7,160.0,257.0,2.13,Poisoning,Dizziness,Diabetes,1,13.9,Police,False,High,0.662,ICU
+P0484,2025-11-01 17:53:13,89,Female,A-,104,158,94,92,23,38.2,Confused,14,4,14.1,9.1,230.0,116.0,1.19,Burns,"Abdominal Pain, Nausea",Multiple Conditions,5,26.4,Police,True,Medium,0.457,HDU
+P0485,2025-11-01 15:53:13,78,Female,O-,109,155,92,95,24,38.4,Confused,13,5,14.8,6.7,387.0,167.0,1.17,Appendicitis,"Seizures, Chest Pain",Diabetes,5,38.1,Air Ambulance,True,Medium,0.438,HDU
+P0486,2025-10-30 20:53:14,77,Female,B+,110,156,90,91,28,38.7,Drowsy,11,7,7.8,16.9,150.0,370.0,3.92,Asthma Attack,Difficulty Breathing,Heart Disease,4,34.0,Police,True,High,0.678,HDU
+P0487,2025-10-30 15:53:14,24,Male,AB+,105,160,110,90,28,39.1,Drowsy,10,8,8.4,15.0,169.0,313.0,1.66,Burns,"Weakness, Severe Pain, Cough",Heart Disease,1,33.2,Police,True,High,0.807,HDU
+P0488,2025-10-31 05:53:14,75,Male,B+,85,130,77,100,15,37.6,Alert,15,2,13.7,7.3,155.0,131.0,0.76,Appendicitis,"Difficulty Breathing, Confusion",Diabetes,5,22.5,Air Ambulance,True,Low,0.106,General Ward
+P0489,2025-11-01 23:53:14,89,Female,B+,87,134,71,98,15,36.8,Alert,15,1,13.0,9.8,271.0,95.0,0.86,Appendicitis,"Unconscious, Confusion",Multiple Conditions,5,39.6,Walk-in,False,Low,0.075,General Ward
+P0490,2025-11-01 22:53:14,63,Male,AB+,125,162,103,93,22,38.8,Alert,10,8,7.1,17.2,176.0,42.0,2.62,Diabetes Emergency,"Abdominal Pain, Seizures, Difficulty Breathing, Bleeding",Diabetes,5,13.6,Air Ambulance,False,High,0.707,HDU
+P0491,2025-11-01 08:53:14,43,Female,O-,104,160,102,92,22,39.1,Drowsy,11,9,7.7,16.9,176.0,59.0,3.71,Appendicitis,"Nausea, Difficulty Breathing",None,0,7.1,Ambulance,False,High,0.838,ICU
+P0492,2025-11-01 10:53:14,51,Male,O+,104,132,95,95,22,37.6,Confused,14,5,14.0,4.6,202.0,96.0,1.16,Appendicitis,"Severe Pain, Abdominal Pain",Multiple Conditions,4,31.1,Ambulance,True,Medium,0.413,HDU
+P0493,2025-10-31 15:53:14,72,Male,B+,104,166,100,90,28,39.3,Drowsy,12,6,9.0,14.3,102.0,61.0,1.6,Gastrointestinal Bleeding,"Severe Pain, Unconscious",Hypertension,5,0.8,Air Ambulance,False,High,0.766,ICU
+P0494,2025-11-02 01:53:14,52,Male,A+,120,173,109,90,26,39.1,Drowsy,12,7,10.3,18.0,126.0,380.0,1.8,Pulmonary Embolism,"Chest Pain, Nausea, Unconscious, Confusion",Diabetes,0,10.2,Air Ambulance,True,High,0.727,ICU
+P0495,2025-11-01 17:53:14,64,Female,B-,78,136,79,97,19,36.6,Alert,15,2,14.1,10.2,213.0,131.0,0.89,Pulmonary Embolism,"Severe Pain, Nausea",Diabetes,3,34.7,Air Ambulance,True,Low,0.394,General Ward
+P0496,2025-11-02 10:53:14,57,Female,B-,99,133,80,92,22,37.6,Alert,14,4,12.9,6.7,292.0,96.0,0.73,Heart Attack,Weakness,Hypertension,3,4.1,Police,True,Medium,0.474,HDU
+P0497,2025-10-30 23:53:14,44,Female,B-,109,150,80,95,19,37.5,Alert,13,7,15.4,8.1,289.0,107.0,1.12,Heart Attack,Cough,Heart Disease,3,10.7,Walk-in,True,Medium,0.407,General Ward
+P0498,2025-10-31 00:53:14,53,Male,A+,62,140,78,100,16,37.4,Alert,15,2,15.1,4.2,218.0,167.0,0.84,Burns,Dizziness,Heart Disease,3,42.0,Ambulance,True,Low,0.224,General Ward
+P0499,2025-10-31 05:53:14,63,Female,AB-,119,161,104,91,30,38.7,Drowsy,11,7,8.3,17.1,141.0,274.0,3.42,Heart Attack,"Seizures, Weakness, Difficulty Breathing, Unconscious",Multiple Conditions,2,42.5,Police,True,High,0.779,HDU
+P0500,2025-10-31 20:53:14,45,Male,AB-,109,157,84,94,22,38.1,Alert,13,5,15.2,6.8,356.0,168.0,1.29,COPD,Confusion,Asthma,2,27.8,Ambulance,False,Medium,0.585,HDU
