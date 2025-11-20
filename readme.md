@@ -16,6 +16,7 @@ It automates **patient triage**, **bed allocation**, and **staff scheduling**, h
 | **2️⃣ Fuzzy Logic Triage System**        | Uses fuzzy inference on vital signs (heart rate, SpO₂, temperature, respiratory rate) to compute a patient severity score (0–1). | `scikit-fuzzy`                        |
 | **3️⃣ A\* Bed Allocation System**        | Allocates patients to available hospital beds using an A\* search algorithm to minimize distance cost and prioritize severity.     | Custom heuristic +`numpy`             |
 | **4️⃣ CSP-based Scheduling**             | Assigns doctors, rooms, and time slots for surgeries based on constraints like availability and non-overlapping times.             | `python-constraint`                   |
+| **5️⃣ RAG AI Summarizer** 🤖             | Converts technical results into simple English summaries using Groq's LLM API (Llama 3.3 70B model).                              | `groq`, Llama 3.3 70B                |
 | **🖥 Streamlit Frontend**                  | Provides an easy-to-use dashboard for all modules with interactive buttons and real-time output.                                   | `streamlit`                           |
 
 ---
@@ -37,13 +38,19 @@ hospital-rm/
 
 │   ├── app.py                               # Main Streamlit application
 
+│   ├── algorithm_comparison.ipynb           # Jupyter notebook comparing A*, BFS, DFS, Greedy
+
+│   ├── test_rag.py                          # Test script for RAG summarizer
+
 │   ├── modules/
 
 │   │   ├── fuzzy_triage.py                  # Fuzzy Logic model
 
 │   │   ├── a_star_bed_allocation.py         # A* search bed allocator
 
-│   │   └── csp_scheduler.py                 # CSP scheduling system
+│   │   ├── csp_scheduler.py                 # CSP scheduling system
+
+│   │   └── rag_summarizer.py                # RAG AI summarizer using Groq API
 
 │
 
@@ -102,6 +109,87 @@ python -m streamlit run src/app.py
 * Assigns  **doctors** ,  **rooms** , and **time slots**
 * Ensures no overlap (doctor/room/time) and respects constraints
 * Produces fast and feasible schedule (solves in <2 seconds)
+
+### 🔹 Step 5 — RAG AI Summarizer 🤖
+
+* **Powered by Groq API** with Llama 3.3 70B model
+* Converts A* and CSP results into **simple English summaries**
+* Provides actionable insights for hospital staff
+* Three summary types:
+  - Bed allocation summary
+  - Surgery schedule summary
+  - Comprehensive combined report
+
+---
+
+## 🤖 RAG AI Summarizer
+
+### Overview
+The RAG (Retrieval Augmented Generation) module uses **Groq's LLM API** to generate human-friendly summaries of technical results.
+
+### How It Works
+```
+Algorithm Results → RAG Summarizer → Groq API (Llama 3.3 70B) → Simple English Summary
+```
+
+### Usage in App
+1. Run fuzzy triage (Step 2)
+2. Run A* bed allocation (Step 3) → See AI summary
+3. Run CSP scheduling (Step 4) → See AI summary
+4. Click **"Generate Complete AI Summary"** → Comprehensive report
+
+### Example Output
+```
+We had 20 patients who needed beds in the hospital, and we were able to 
+give each of them a bed. Patients were prioritized based on how sick they 
+are, with the sickest patients getting beds closest to the care they need.
+
+The "distance cost" refers to how far the patient's bed is from the care 
+they need. A distance of 0 means the patient is right next to the care 
+they need, which is ideal.
+```
+
+### Standalone Usage
+```python
+from modules.rag_summarizer import summarize_results
+
+summary = summarize_results(
+    allocation_data=allocations,
+    schedule_data=schedule,
+    total_patients=20
+)
+print(summary)
+```
+
+### API Configuration
+- **Model**: `llama-3.3-70b-versatile`
+- **Temperature**: 0.7
+- **API Key**: Configured in `rag_summarizer.py`
+
+---
+
+## 📊 Algorithm Comparison Notebook
+
+### `algorithm_comparison.ipynb`
+Interactive Jupyter notebook comparing bed allocation algorithms:
+- **A\* Search** - Optimal & efficient ✅
+- **BFS** - Optimal but slower
+- **DFS** - Fast but suboptimal
+- **Greedy Best-First** - Fast but suboptimal
+
+### Features
+- Performance benchmarks (time, nodes explored, distance)
+- 6+ visualizations showing why A* is best
+- Comprehensive 4-in-1 dashboard
+- Hospital bed allocation heatmap
+- Detailed analysis and conclusions
+
+### Run the Notebook
+```bash
+jupyter notebook src/algorithm_comparison.ipynb
+```
+
+---
 
 ## 🧩 Future Enhancements
 

@@ -125,9 +125,24 @@ if st.button("Run A* Bed Allocation Optimization"):
     alloc_df = pd.DataFrame(allocations)
     alloc_df["Distance_Cost"] = pd.to_numeric(alloc_df["Distance_Cost"], errors="coerce")
 
+    # Store in session state for RAG
+    st.session_state["bed_allocations"] = allocations
+    st.session_state["total_patients"] = len(patients_list)
+
     st.success("✅ Bed allocation complete!")
     st.dataframe(alloc_df)
     st.info("Each patient is assigned a bed based on severity using A* search optimization.")
+    
+    # AI Summary using RAG
+    try:
+        from modules.rag_summarizer import summarize_results
+        with st.spinner("🤖 Generating AI summary..."):
+            summary = summarize_results(allocation_data=allocations, total_patients=len(patients_list))
+        
+        st.markdown("### 🤖 AI-Generated Summary (Simple English)")
+        st.info(summary)
+    except Exception as e:
+        st.warning(f"AI summary not available: {str(e)}")
 
 # ---------------------- Step 4 ----------------------
 st.markdown("---")
@@ -142,8 +157,48 @@ if st.button("Run CSP Scheduling Optimization"):
 
         schedule = csp.build_schedule(patients)
 
+    # Store in session state for RAG
+    st.session_state["surgery_schedule"] = schedule
+
     if schedule:
         st.success("✅ Schedule generated successfully!")
         st.dataframe(pd.DataFrame(schedule))
+        
+        # AI Summary using RAG
+        try:
+            from modules.rag_summarizer import summarize_results
+            with st.spinner("🤖 Generating AI summary..."):
+                summary = summarize_results(schedule_data=schedule)
+            
+            st.markdown("### 🤖 AI-Generated Summary (Simple English)")
+            st.info(summary)
+        except Exception as e:
+            st.warning(f"AI summary not available: {str(e)}")
     else:
         st.error("No feasible schedule found.")
+
+# ---------------------- Step 5 ----------------------
+st.markdown("---")
+st.markdown("## Step 5 — 📊 Comprehensive AI Summary")
+
+if st.button("🤖 Generate Complete AI Summary"):
+    allocations = st.session_state.get("bed_allocations", None)
+    schedule = st.session_state.get("surgery_schedule", None)
+    total_patients = st.session_state.get("total_patients", 0)
+    
+    if allocations or schedule:
+        try:
+            from modules.rag_summarizer import summarize_results
+            with st.spinner("🤖 Generating comprehensive AI summary..."):
+                summary = summarize_results(
+                    allocation_data=allocations,
+                    schedule_data=schedule,
+                    total_patients=total_patients
+                )
+            
+            st.markdown("### 📋 Complete System Summary")
+            st.success(summary)
+        except Exception as e:
+            st.error(f"Error generating summary: {str(e)}")
+    else:
+        st.warning("⚠️ Please run A* Bed Allocation and/or CSP Scheduling first to generate a summary.")
